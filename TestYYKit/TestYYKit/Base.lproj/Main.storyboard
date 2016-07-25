@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M7a-ET-9o1">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestYYKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVH-87-mD2">
+                                <rect key="frame" x="0.0" y="492" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="lgU-tF-mR0"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="rewind" id="wCA-uM-YWS">
+                                        <connections>
+                                            <action selector="back:" destination="BYZ-38-t0r" id="PXq-U8-czD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="58" style="plain" systemItem="fixedSpace" id="2rP-a7-NMO"/>
+                                    <barButtonItem systemItem="fastForward" id="kcj-rK-9ow">
+                                        <connections>
+                                            <action selector="forward:" destination="BYZ-38-t0r" id="krh-ws-XM9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="GIg-cr-bLd"/>
+                                    <barButtonItem systemItem="refresh" id="CVO-g8-IAI">
+                                        <connections>
+                                            <action selector="refreash:" destination="BYZ-38-t0r" id="R9r-7l-cAg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OVH-87-mD2" secondAttribute="bottom" id="1mW-HI-blb"/>
+                            <constraint firstAttribute="trailing" secondItem="OVH-87-mD2" secondAttribute="trailing" id="27y-AA-x3d"/>
+                            <constraint firstItem="OVH-87-mD2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oJ2-pn-cjb"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Jde-33-NeT"/>
+                    <connections>
+                        <outlet property="forwardItem" destination="kcj-rK-9ow" id="Q5W-4X-v2Q"/>
+                        <outlet property="refreashItem" destination="CVO-g8-IAI" id="byB-5P-dvH"/>
+                        <outlet property="rewind" destination="wCA-uM-YWS" id="vN6-9P-Ibv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1057" y="349"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="M2P-Hr-yoM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M7a-ET-9o1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="SB8-Qx-NXa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kGE-0v-uaM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gH-1f-WBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="-343"/>
         </scene>
     </scenes>
 </document>
