@@ -12,13 +12,16 @@ import SnapKit
 import SVProgressHUD
 import WebKit
 
-class ViewController: UIViewController ,UITextFieldDelegate,WKNavigationDelegate{
+let MessageHandler = "didGetPosts"
+
+class ViewController: UIViewController ,UITextFieldDelegate,WKNavigationDelegate,WKScriptMessageHandler{
 
     @IBOutlet weak var rewind: UIBarButtonItem!
     
     @IBOutlet weak var forwardItem: UIBarButtonItem!
     
     @IBOutlet weak var refreashItem: UIBarButtonItem!
+    var  posts:[Post] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,8 +97,7 @@ class ViewController: UIViewController ,UITextFieldDelegate,WKNavigationDelegate
                 make.right.equalTo(0)
                 make.bottom.equalTo(-44)
             }
-            let url = NSURL(string: "http://www.cocoachina.com/ios/20150203/11089.html")
-            webView.loadRequest(NSURLRequest(URL: url!))
+         
             
           navigationController!.navigationBar.addSubview(textField)
             textField.snp_makeConstraints { (make) in
@@ -113,11 +115,36 @@ class ViewController: UIViewController ,UITextFieldDelegate,WKNavigationDelegate
                 make.bottom.equalTo(0)
                 
             }
+            
+            
             rewind.enabled = false
             forwardItem.enabled = false
             webView.addObserver(self, forKeyPath: "loading", options: NSKeyValueObservingOptions.New, context: nil)
             webView.addObserver(self, forKeyPath: "estimatedProgress", options: NSKeyValueObservingOptions.New, context: nil)
+            webView.addObserver(self, forKeyPath: "title", options: NSKeyValueObservingOptions.New, context: nil)
+            setupWKConfig()
+            
         }
+    
+   // 创建了一个WKWebViewConfiguration对象，它拥有一些属性来作为原生代码和网页之间沟通的桥梁。JavaScript 代码被一个WKUserScript对象加载和包装。然后这个脚本被赋值给WKWebViewConfiguration对象的 userContentController属性，接着webView使用这个配置来初始化。
+    private func setupWKConfig()
+    {
+        let  config = WKWebViewConfiguration()
+        let scriptUrl  = NSBundle.mainBundle().pathForResource("getPost", ofType: "js")
+        var scriptContent = " "
+        do{
+            scriptContent = try String(contentsOfFile: scriptUrl!, encoding: NSUTF8StringEncoding )
+        }catch{
+            print(error)
+        }
+        
+        let script = WKUserScript(source: scriptContent, injectionTime: WKUserScriptInjectionTime.AtDocumentStart, forMainFrameOnly: true)
+        config.userContentController.addUserScript(script)
+        config.userContentController.addScriptMessageHandler(self, name:MessageHandler )
+        let url = NSURL(string: "http://www.cocoachina.com")
+        webView.loadRequest(NSURLRequest(URL: url!))
+        
+    }
         private func padding() -> NSMutableAttributedString
         {
             let padding = NSMutableAttributedString(string: "\n\n")
@@ -172,6 +199,8 @@ extension ViewController
         }else if keyPath == "estimatedProgress"{
             progressView.hidden = webView.estimatedProgress == 1
             progressView.setProgress(Float(webView.estimatedProgress), animated: true)
+        } else if keyPath == "title"{
+            title = webView.title
         }
         
     }
@@ -187,4 +216,33 @@ extension ViewController
         
           progressView.setProgress(0.0, animated: true)
     }
+    
+    /**
+     在网页加载时会被多次调用。其中一个参数WKNavigationAction对象 包含了帮助你决定是否让一个网页被加载的信息。在上面的代码中，我们使用其中两个属性，navigationType和request。我们只想中断被用户点击的外部链接的加载过程，所以我们检查了navigationType。然后我们检查了request的url来确认它是否是一个外部链接。如果两个条件都满足，这个url就会在用户的浏览器中打开（通常都是Safari）并且WKNavigationActionPolicy.Cancel终止了 App加载网页的过程。否则这个网页就会被加载并显示
+     */
+    func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
+        if navigationAction.navigationType == WKNavigationType.LinkActivated && navigationAction.request.URL!.host!.lowercaseString.hasPrefix("http://www.cocoachina.com"){
+            UIApplication.sharedApplication().openURL(navigationAction.request.URL!)
+            decisionHandler(WKNavigationActionPolicy.Cancel)
+        }else{
+            decisionHandler(WKNavigationActionPolicy.Allow)
+        }
+    }
+    
+    func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage)
+    {
+        
+        // js代码返回的数据
+        if message.name == MessageHandler
+        {
+            if  let postsList:[AnyObject] = message.body as?[AnyObject]
+            {
+                for ps in postsList
+                {
+                    let post = Post(dictionary: ps as! [String:AnyObject])
+                    posts.append(post)
+                }
+           }
+    }
+  }
 }

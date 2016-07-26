@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B22943B845CA6DA09C660B58 /* Pods_TestYYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD53157E209F208A16DEBC9B /* Pods_TestYYKit.framework */; };
+		CD1F71BD1D46FE1C00AFD9A7 /* hideSections.js in Resources */ = {isa = PBXBuildFile; fileRef = CD1F71BC1D46FE1C00AFD9A7 /* hideSections.js */; };
+		CD1F71BF1D4700FC00AFD9A7 /* getPost.js in Resources */ = {isa = PBXBuildFile; fileRef = CD1F71BE1D4700FC00AFD9A7 /* getPost.js */; };
+		CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71C01D47028300AFD9A7 /* Post.swift */; };
 		CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */; };
 		CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B041D45E1C500BC5E43 /* ViewController.swift */; };
 		CD9A2B081D45E1C500BC5E43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A2B061D45E1C500BC5E43 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* Begin PBXFileReference section */
 		4222B8E16342F24DC2FA2AE0 /* Pods-TestYYKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYYKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.release.xcconfig"; sourceTree = "<group>"; };
 		A941E3658C440D753DB647AB /* Pods-TestYYKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYYKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.debug.xcconfig"; sourceTree = "<group>"; };
+		CD1F71BC1D46FE1C00AFD9A7 /* hideSections.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hideSections.js; sourceTree = "<group>"; };
+		CD1F71BE1D4700FC00AFD9A7 /* getPost.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getPost.js; sourceTree = "<group>"; };
+		CD1F71C01D47028300AFD9A7 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CD9A2AFF1D45E1C500BC5E43 /* TestYYKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestYYKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD9A2B041D45E1C500BC5E43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,10 +123,13 @@
 			children = (
 				CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */,
 				CD9A2B041D45E1C500BC5E43 /* ViewController.swift */,
+				CD1F71C01D47028300AFD9A7 /* Post.swift */,
 				CD9A2B061D45E1C500BC5E43 /* Main.storyboard */,
 				CD9A2B091D45E1C500BC5E43 /* Assets.xcassets */,
 				CD9A2B0B1D45E1C500BC5E43 /* LaunchScreen.storyboard */,
 				CD9A2B0E1D45E1C500BC5E43 /* Info.plist */,
+				CD1F71BE1D4700FC00AFD9A7 /* getPost.js */,
+				CD1F71BC1D46FE1C00AFD9A7 /* hideSections.js */,
 			);
 			path = TestYYKit;
 			sourceTree = "<group>";
@@ -258,7 +267,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1F71BD1D46FE1C00AFD9A7 /* hideSections.js in Resources */,
 				CD9A2B0D1D45E1C500BC5E43 /* LaunchScreen.storyboard in Resources */,
+				CD1F71BF1D4700FC00AFD9A7 /* getPost.js in Resources */,
 				CD9A2B0A1D45E1C500BC5E43 /* Assets.xcassets in Resources */,
 				CD9A2B081D45E1C500BC5E43 /* Main.storyboard in Resources */,
 			);
@@ -333,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */,
 				CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */,
 				CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */,
 			);
