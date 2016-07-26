@@ -11,6 +11,8 @@
 		CD1F71BD1D46FE1C00AFD9A7 /* hideSections.js in Resources */ = {isa = PBXBuildFile; fileRef = CD1F71BC1D46FE1C00AFD9A7 /* hideSections.js */; };
 		CD1F71BF1D4700FC00AFD9A7 /* getPost.js in Resources */ = {isa = PBXBuildFile; fileRef = CD1F71BE1D4700FC00AFD9A7 /* getPost.js */; };
 		CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71C01D47028300AFD9A7 /* Post.swift */; };
+		CD1F71CB1D47124800AFD9A7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */; };
+		CD1F71CD1D47134400AFD9A7 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */; };
 		CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */; };
 		CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B041D45E1C500BC5E43 /* ViewController.swift */; };
 		CD9A2B081D45E1C500BC5E43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A2B061D45E1C500BC5E43 /* Main.storyboard */; };
@@ -43,8 +45,10 @@
 		CD1F71BC1D46FE1C00AFD9A7 /* hideSections.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hideSections.js; sourceTree = "<group>"; };
 		CD1F71BE1D4700FC00AFD9A7 /* getPost.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getPost.js; sourceTree = "<group>"; };
 		CD1F71C01D47028300AFD9A7 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		CD9A2AFF1D45E1C500BC5E43 /* TestYYKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestYYKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TestYYKit/AppDelegate.swift; sourceTree = "<group>"; };
 		CD9A2B041D45E1C500BC5E43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD9A2B071D45E1C500BC5E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD9A2B091D45E1C500BC5E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,9 +99,74 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CD1F71C61D470E1200AFD9A7 /* 2.TableView的视觉差效果 */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F71C71D470E1200AFD9A7 /* Controller */,
+				CD1F71C81D470E1200AFD9A7 /* Model */,
+				CD1F71C91D470E1200AFD9A7 /* View */,
+			);
+			path = "2.TableView的视觉差效果";
+			sourceTree = "<group>";
+		};
+		CD1F71C71D470E1200AFD9A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD1F71C81D470E1200AFD9A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD1F71C91D470E1200AFD9A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD1F71CE1D4742F600AFD9A7 /* 3.ReusableCellDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F71CF1D4742F600AFD9A7 /* Controller */,
+				CD1F71D01D4742F600AFD9A7 /* Model */,
+				CD1F71D11D4742F600AFD9A7 /* View */,
+			);
+			path = 3.ReusableCellDemo;
+			sourceTree = "<group>";
+		};
+		CD1F71CF1D4742F600AFD9A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD1F71D01D4742F600AFD9A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD1F71D11D4742F600AFD9A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CD9A2AF61D45E1C500BC5E43 = {
 			isa = PBXGroup;
 			children = (
+				CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */,
 				CD9A2B321D45E2DC00BC5E43 /* TestYYKit_Bridge_Header.h */,
 				CD9A2B011D45E1C500BC5E43 /* TestYYKit */,
 				CD9A2B161D45E1C500BC5E43 /* TestYYKitTests */,
@@ -121,7 +190,8 @@
 		CD9A2B011D45E1C500BC5E43 /* TestYYKit */ = {
 			isa = PBXGroup;
 			children = (
-				CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */,
+				CD1F71C61D470E1200AFD9A7 /* 2.TableView的视觉差效果 */,
+				CD1F71CE1D4742F600AFD9A7 /* 3.ReusableCellDemo */,
 				CD9A2B041D45E1C500BC5E43 /* ViewController.swift */,
 				CD1F71C01D47028300AFD9A7 /* Post.swift */,
 				CD9A2B061D45E1C500BC5E43 /* Main.storyboard */,
@@ -346,7 +416,9 @@
 			files = (
 				CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */,
 				CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */,
+				CD1F71CD1D47134400AFD9A7 /* ImageTableViewCell.swift in Sources */,
 				CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */,
+				CD1F71CB1D47124800AFD9A7 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

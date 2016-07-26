@@ -38,6 +38,7 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (3.2.0):
     - PromiseKit/CorePromise
+  - Reusable (2.3.0)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -54,6 +55,7 @@ DEPENDENCIES:
   - MJRefresh
   - ObjectMapper
   - PromiseKit (~> 3.2)
+  - Reusable
   - SDWebImage
   - SnapKit
   - SVProgressHUD
@@ -67,12 +69,13 @@ SPEC CHECKSUMS:
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
   OMGHTTPURLRQ: 38316b56d88125c600bcdb16df8329147da2b0ee
   PromiseKit: 1db024241265f428137a9f3c00ff9590740c4be6
+  Reusable: 0fec1f7fedf69acbc7710fc7cab86a1a1a3f2542
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SnapKit: bbad04cb016c7cead63965f16b00c09318d271ee
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   TYAlertController: dfc58e9950d30f255f13c7e578496ec0cc9f0ef5
   YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: 7167729380c60954ace200ec809e582ced47ef23
+PODFILE CHECKSUM: 92639cb4e659c8dee525fb6ba1a4ca4338d91ddc
 
 COCOAPODS: 1.0.1

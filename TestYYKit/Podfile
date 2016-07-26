@@ -11,6 +11,7 @@ pod 'YYKit'
 pod "PromiseKit", "~> 3.2"
 pod 'AFNetworking', '~> 3.0'
 pod 'ObjectMapper'
+pod 'Reusable'
 end
 target 'TestYYKit' do
 pods
