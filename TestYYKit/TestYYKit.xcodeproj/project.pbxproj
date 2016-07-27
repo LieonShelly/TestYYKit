@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B22943B845CA6DA09C660B58 /* Pods_TestYYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD53157E209F208A16DEBC9B /* Pods_TestYYKit.framework */; };
+		CD00E2111D485668004A1020 /* AlamoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00E2101D485668004A1020 /* AlamoTableViewController.swift */; };
 		CD1F71BD1D46FE1C00AFD9A7 /* hideSections.js in Resources */ = {isa = PBXBuildFile; fileRef = CD1F71BC1D46FE1C00AFD9A7 /* hideSections.js */; };
 		CD1F71BF1D4700FC00AFD9A7 /* getPost.js in Resources */ = {isa = PBXBuildFile; fileRef = CD1F71BE1D4700FC00AFD9A7 /* getPost.js */; };
 		CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71C01D47028300AFD9A7 /* Post.swift */; };
 		CD1F71CB1D47124800AFD9A7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */; };
 		CD1F71CD1D47134400AFD9A7 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */; };
+		CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5ED6231D48870100587C7D /* ProTableViewController.swift */; };
 		CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */; };
 		CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B041D45E1C500BC5E43 /* ViewController.swift */; };
 		CD9A2B081D45E1C500BC5E43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A2B061D45E1C500BC5E43 /* Main.storyboard */; };
@@ -42,11 +44,13 @@
 /* Begin PBXFileReference section */
 		4222B8E16342F24DC2FA2AE0 /* Pods-TestYYKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYYKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.release.xcconfig"; sourceTree = "<group>"; };
 		A941E3658C440D753DB647AB /* Pods-TestYYKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYYKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.debug.xcconfig"; sourceTree = "<group>"; };
+		CD00E2101D485668004A1020 /* AlamoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoTableViewController.swift; sourceTree = "<group>"; };
 		CD1F71BC1D46FE1C00AFD9A7 /* hideSections.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hideSections.js; sourceTree = "<group>"; };
 		CD1F71BE1D4700FC00AFD9A7 /* getPost.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getPost.js; sourceTree = "<group>"; };
 		CD1F71C01D47028300AFD9A7 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		CD5ED6231D48870100587C7D /* ProTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProTableViewController.swift; sourceTree = "<group>"; };
 		CD9A2AFF1D45E1C500BC5E43 /* TestYYKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestYYKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TestYYKit/AppDelegate.swift; sourceTree = "<group>"; };
 		CD9A2B041D45E1C500BC5E43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,38 @@
 				4222B8E16342F24DC2FA2AE0 /* Pods-TestYYKit.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD00E20C1D48562C004A1020 /* 4.Alamofire测试 */ = {
+			isa = PBXGroup;
+			children = (
+				CD00E20D1D48562C004A1020 /* Controller */,
+				CD00E20E1D48562C004A1020 /* Model */,
+				CD00E20F1D48562C004A1020 /* View */,
+			);
+			path = "4.Alamofire测试";
+			sourceTree = "<group>";
+		};
+		CD00E20D1D48562C004A1020 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD00E2101D485668004A1020 /* AlamoTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD00E20E1D48562C004A1020 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD00E20F1D48562C004A1020 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CD1F71C61D470E1200AFD9A7 /* 2.TableView的视觉差效果 */ = {
@@ -163,6 +199,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CD5ED6221D4886EC00587C7D /* 5.PromiseKit测试 */ = {
+			isa = PBXGroup;
+			children = (
+				CD5ED6231D48870100587C7D /* ProTableViewController.swift */,
+			);
+			path = "5.PromiseKit测试";
+			sourceTree = "<group>";
+		};
 		CD9A2AF61D45E1C500BC5E43 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +236,8 @@
 			children = (
 				CD1F71C61D470E1200AFD9A7 /* 2.TableView的视觉差效果 */,
 				CD1F71CE1D4742F600AFD9A7 /* 3.ReusableCellDemo */,
+				CD00E20C1D48562C004A1020 /* 4.Alamofire测试 */,
+				CD5ED6221D4886EC00587C7D /* 5.PromiseKit测试 */,
 				CD9A2B041D45E1C500BC5E43 /* ViewController.swift */,
 				CD1F71C01D47028300AFD9A7 /* Post.swift */,
 				CD9A2B061D45E1C500BC5E43 /* Main.storyboard */,
@@ -415,7 +461,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */,
+				CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */,
 				CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */,
+				CD00E2111D485668004A1020 /* AlamoTableViewController.swift in Sources */,
 				CD1F71CD1D47134400AFD9A7 /* ImageTableViewCell.swift in Sources */,
 				CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */,
 				CD1F71CB1D47124800AFD9A7 /* TableViewController.swift in Sources */,
