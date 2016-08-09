@@ -18,6 +18,9 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
+  - JSQMessagesViewController (7.3.3):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
   - MJRefresh (3.1.9)
   - ObjectMapper (1.3.0)
   - OMGHTTPURLRQ (3.1.2):
@@ -54,6 +57,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Alamofire
   - FMDB
+  - JSQMessagesViewController
   - MJRefresh
   - ObjectMapper
   - PromiseKit (~> 3.2)
@@ -68,6 +72,8 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  JSQMessagesViewController: 0ee3f80237268192a3e8337fd0d787f1a1bf5a7a
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   MJRefresh: c5f1f1653e5a1b932c90f78074f2bc86f3f9bd5e
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
   OMGHTTPURLRQ: 38316b56d88125c600bcdb16df8329147da2b0ee
@@ -79,6 +85,6 @@ SPEC CHECKSUMS:
   TYAlertController: dfc58e9950d30f255f13c7e578496ec0cc9f0ef5
   YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: 9009e067cb7b2f23adfe9a9fe3b9185332c07ffa
+PODFILE CHECKSUM: 69af45ac982baeb894e8b213fa9a06047c86ff87
 
 COCOAPODS: 1.0.1

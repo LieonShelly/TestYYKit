@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window?.frame = UIScreen.mainScreen().bounds
-        window?.rootViewController = AlamoTableViewController()
+        window?.rootViewController = UINavigationController(rootViewController:ResponderTableViewController())
         window?.makeKeyAndVisible()
         return true
     }
