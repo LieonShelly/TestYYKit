@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import YYKit
 import SnapKit
 import SVProgressHUD
 import WebKit
+import YYText
 
 let MessageHandler = "didGetPosts"
 
@@ -28,7 +28,7 @@ class ViewController: UIViewController ,UITextFieldDelegate,WKNavigationDelegate
         
      
         // 2.测试webKit
-        setupWebView()
+        setupLabel()
     }
     
     
@@ -52,41 +52,58 @@ class ViewController: UIViewController ,UITextFieldDelegate,WKNavigationDelegate
    
        private func setupLabel()
         {
-            let text = NSMutableAttributedString()
-            let one = NSMutableAttributedString(string: "shsdfdfdfdfadow")
-            one.font = UIFont.boldSystemFontOfSize(17)
-            one.color = UIColor.blackColor()
-            let shadow = YYTextShadow()
-             shadow.color = UIColor.init(white: 0.000, alpha: 0.490)
-             shadow.offset = CGSizeMake(0, 1)
-             shadow.radius = 5
-            one.textShadow = shadow
-            text.appendAttributedString(one)
+            
+            label.attributedText = creatAttributeString()
             view.addSubview(label)
-            let two = NSMutableAttributedString(string: "https://www.baidu.com")
-            two.font = UIFont.systemFontOfSize(17)
-            two.underlineStyle = NSUnderlineStyle.StyleSingle
-            
-            two.setTextHighlightRange(two.rangeOfAll(), color: UIColor.blueColor(), backgroundColor: UIColor.blackColor()) { (_, string, _, _) in
-                SVProgressHUD.showInfoWithStatus(two.string)
-            }
-     
-            
-            text.appendAttributedString(two)
-            label.attributedText = text
-            
             label.textAlignment = NSTextAlignment.Center
             label.textVerticalAlignment = YYTextVerticalAlignment.Center
             label.snp_makeConstraints { (make) in
                 make.center.equalTo(view.snp_center)
                 make.width.equalTo(view.snp_width)
-                make.height.equalTo(view.snp_height)
+                make.height.equalTo(40)
+            }
+            
+            textLabel.attributedText = creatAttributeString()
+            
+            view.addSubview(textLabel)
+            textLabel.snp_makeConstraints { (make) in
+                make.left.equalTo(0)
+                make.top.equalTo(90)
+                make.right.equalTo(-20)
+                make.height.equalTo(50)
             }
             
 
-
        }
-    
+    private func creatAttributeString() -> NSMutableAttributedString {
+        
+        let text = NSMutableAttributedString()
+        let one = NSMutableAttributedString(string: "本次sdfsdfsdfsnsbndfasnfns服务已经结束，请对此次服务做")
+        one.yy_alignment = .Center
+        one.yy_font = UIFont.systemFontOfSize(14)
+        one.yy_color = UIColor.blackColor()
+        one.yy_lineSpacing = 5
+        text.appendAttributedString(one)
+        
+        let two = NSMutableAttributedString(string: "  评价 ")
+        two.yy_font = UIFont.systemFontOfSize(17)
+        two.yy_underlineStyle = NSUnderlineStyle.StyleSingle
+        two.yy_lineSpacing = 5
+        two.yy_alignment = .Center
+        
+        let  border = YYTextBorder(fillColor: UIColor.grayColor(), cornerRadius: 3)
+        
+        let hightlight = YYTextHighlight()
+        hightlight.setColor(UIColor.whiteColor())
+        hightlight.setBackgroundBorder(border)
+        hightlight.tapAction = {(_, _, _, _) in
+            print("我被搞了")
+        }
+        two.yy_setTextHighlight(hightlight, range: two.yy_rangeOfAll())
+        text.appendAttributedString(two)
+        return text
+    }
+
         private func setupWebView()
         {
             
@@ -145,13 +162,7 @@ class ViewController: UIViewController ,UITextFieldDelegate,WKNavigationDelegate
         webView.loadRequest(NSURLRequest(URL: url!))
         
     }
-        private func padding() -> NSMutableAttributedString
-        {
-            let padding = NSMutableAttributedString(string: "\n\n")
-            padding.font = UIFont.systemFontOfSize(4)
-            return padding
-            
-        }
+      
        
         private lazy var label:YYLabel = {
             let label = YYLabel()
@@ -160,6 +171,17 @@ class ViewController: UIViewController ,UITextFieldDelegate,WKNavigationDelegate
             
             return label
         }()
+    
+    private lazy var textLabel: YYLabel = {
+        let label = YYLabel()
+        label.userInteractionEnabled = true
+        label.textAlignment = NSTextAlignment.Center
+        label.backgroundColor = UIColor.redColor()
+        label.numberOfLines = 0
+        
+        return label
+    }()
+    
     private lazy var webView:WKWebView = {
         let webView = WKWebView()
         webView.navigationDelegate = self

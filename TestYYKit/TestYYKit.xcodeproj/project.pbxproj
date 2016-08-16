@@ -28,6 +28,7 @@
 		CD9EE3D41D5A3DC700928CBA /* THURLNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3D31D5A3DC700928CBA /* THURLNavigation.swift */; };
 		CDB432B41D5862A300BB037E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB432B31D5862A300BB037E /* Network.swift */; };
 		CDB432B81D5865A500BB037E /* NetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB432B71D5865A500BB037E /* NetViewController.swift */; };
+		CDBC20791D5CB8C900B321BC /* YYText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBC20781D5CB8C900B321BC /* YYText.framework */; };
 		CDCCF3AA1D58D2A7005C7DED /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCCF3A91D58D2A7005C7DED /* ChatViewController.swift */; };
 		CDF106AE1D585BB900D35763 /* TheResourceStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF106AD1D585BB900D35763 /* TheResourceStruct.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,8 @@
 		CD9EE3D31D5A3DC700928CBA /* THURLNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THURLNavigation.swift; sourceTree = "<group>"; };
 		CDB432B31D5862A300BB037E /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		CDB432B71D5865A500BB037E /* NetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetViewController.swift; sourceTree = "<group>"; };
+		CDBC20761D5CB8C200B321BC /* YYKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TestYYKit-dyikdfgwbpejdoapbiefthzmcjyc/Build/Products/Debug-iphonesimulator/YYKit/YYKit.framework"; sourceTree = "<group>"; };
+		CDBC20781D5CB8C900B321BC /* YYText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYText.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TestYYKit-dyikdfgwbpejdoapbiefthzmcjyc/Build/Products/Debug-iphonesimulator/YYText/YYText.framework"; sourceTree = "<group>"; };
 		CDCCF3A91D58D2A7005C7DED /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		CDF106AD1D585BB900D35763 /* TheResourceStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheResourceStruct.swift; sourceTree = "<group>"; };
 		FD53157E209F208A16DEBC9B /* Pods_TestYYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestYYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBC20791D5CB8C900B321BC /* YYText.framework in Frameworks */,
 				B22943B845CA6DA09C660B58 /* Pods_TestYYKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +329,8 @@
 		DABC75D8C37BA7B44E32B2AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDBC20781D5CB8C900B321BC /* YYText.framework */,
+				CDBC20761D5CB8C200B321BC /* YYKit.framework */,
 				FD53157E209F208A16DEBC9B /* Pods_TestYYKit.framework */,
 			);
 			name = Frameworks;

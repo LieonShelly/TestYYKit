@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M7a-ET-9o1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M7a-ET-9o1">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -61,6 +61,30 @@
             </objects>
             <point key="canvasLocation" x="1057" y="349"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Aqn-hq-8SB">
+            <objects>
+                <viewController id="Cy8-G4-49u" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aUc-I0-8UJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="EYH-5s-9Gk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4gr-YG-Cnc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubble_outgoing" translatesAutoresizingMaskIntoConstraints="NO" id="hxJ-oX-G8B">
+                                <rect key="frame" x="38" y="106" width="300" height="47"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8T-xk-7w9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575.5" y="503.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="M2P-Hr-yoM">
             <objects>
@@ -80,4 +104,7 @@
             <point key="canvasLocation" x="270" y="-343"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bubble_outgoing" width="106" height="44"/>
+    </resources>
 </document>
