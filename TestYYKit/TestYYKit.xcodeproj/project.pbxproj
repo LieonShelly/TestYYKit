@@ -15,6 +15,7 @@
 		CD1F71CB1D47124800AFD9A7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */; };
 		CD1F71CD1D47134400AFD9A7 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */; };
 		CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5ED6231D48870100587C7D /* ProTableViewController.swift */; };
+		CD97107F1D64BC1200A1BF2B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD97107E1D64BC1200A1BF2B /* AppConfig.swift */; };
 		CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */; };
 		CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B041D45E1C500BC5E43 /* ViewController.swift */; };
 		CD9A2B081D45E1C500BC5E43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A2B061D45E1C500BC5E43 /* Main.storyboard */; };
@@ -60,6 +61,11 @@
 		CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		CD5ED6231D48870100587C7D /* ProTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProTableViewController.swift; sourceTree = "<group>"; };
+		CD97107A1D64B70100A1BF2B /* CommonConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonConfig.xcconfig; sourceTree = "<group>"; };
+		CD97107B1D64B70C00A1BF2B /* DebugConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugConfig.xcconfig; sourceTree = "<group>"; };
+		CD97107C1D64B71900A1BF2B /* RealseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RealseConfig.xcconfig; sourceTree = "<group>"; };
+		CD97107D1D64B72B00A1BF2B /* ReleaseTestConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseTestConfig.xcconfig; sourceTree = "<group>"; };
+		CD97107E1D64BC1200A1BF2B /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		CD9A2AFF1D45E1C500BC5E43 /* TestYYKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestYYKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TestYYKit/AppDelegate.swift; sourceTree = "<group>"; };
 		CD9A2B041D45E1C500BC5E43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 		CDBC20781D5CB8C900B321BC /* YYText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYText.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TestYYKit-dyikdfgwbpejdoapbiefthzmcjyc/Build/Products/Debug-iphonesimulator/YYText/YYText.framework"; sourceTree = "<group>"; };
 		CDCCF3A91D58D2A7005C7DED /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		CDF106AD1D585BB900D35763 /* TheResourceStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheResourceStruct.swift; sourceTree = "<group>"; };
+		EFEC33DE950C287F9D1E94EA /* Pods-TestYYKit.releasetest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYYKit.releasetest.xcconfig"; path = "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.releasetest.xcconfig"; sourceTree = "<group>"; };
 		FD53157E209F208A16DEBC9B /* Pods_TestYYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestYYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,6 +128,7 @@
 			children = (
 				A941E3658C440D753DB647AB /* Pods-TestYYKit.debug.xcconfig */,
 				4222B8E16342F24DC2FA2AE0 /* Pods-TestYYKit.release.xcconfig */,
+				EFEC33DE950C287F9D1E94EA /* Pods-TestYYKit.releasetest.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -232,6 +240,11 @@
 		CD9A2AF61D45E1C500BC5E43 = {
 			isa = PBXGroup;
 			children = (
+				CD97107E1D64BC1200A1BF2B /* AppConfig.swift */,
+				CD97107A1D64B70100A1BF2B /* CommonConfig.xcconfig */,
+				CD97107B1D64B70C00A1BF2B /* DebugConfig.xcconfig */,
+				CD97107C1D64B71900A1BF2B /* RealseConfig.xcconfig */,
+				CD97107D1D64B72B00A1BF2B /* ReleaseTestConfig.xcconfig */,
 				CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */,
 				CD9A2B321D45E2DC00BC5E43 /* TestYYKit_Bridge_Header.h */,
 				CD9A2B011D45E1C500BC5E43 /* TestYYKit */,
@@ -521,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD9EE3CC1D5A30BC00928CBA /* ResponderTableViewController.swift in Sources */,
+				CD97107F1D64BC1200A1BF2B /* AppConfig.swift in Sources */,
 				CDF106AE1D585BB900D35763 /* TheResourceStruct.swift in Sources */,
 				CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */,
 				CDCCF3AA1D58D2A7005C7DED /* ChatViewController.swift in Sources */,
@@ -589,6 +603,89 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CD9710761D64B60C00A1BF2B /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ReleaseTest;
+		};
+		CD9710771D64B60C00A1BF2B /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD97107D1D64B72B00A1BF2B /* ReleaseTestConfig.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestYYKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" －D ${CONFIG_FLAG}";
+				PRODUCT_BUNDLE_IDENTIFIER = Zoowee.TestYYKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = TestYYKit/TestYYKit_Bridge_Header.h;
+			};
+			name = ReleaseTest;
+		};
+		CD9710781D64B60C00A1BF2B /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestYYKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zoowee.TestYYKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestYYKit.app/TestYYKit";
+			};
+			name = ReleaseTest;
+		};
+		CD9710791D64B60C00A1BF2B /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestYYKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zoowee.TestYYKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestYYKit;
+			};
+			name = ReleaseTest;
+		};
 		CD9A2B251D45E1C500BC5E43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -676,11 +773,12 @@
 		};
 		CD9A2B281D45E1C500BC5E43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A941E3658C440D753DB647AB /* Pods-TestYYKit.debug.xcconfig */;
+			baseConfigurationReference = CD97107B1D64B70C00A1BF2B /* DebugConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestYYKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" －D ${CONFIG_FLAG}";
 				PRODUCT_BUNDLE_IDENTIFIER = Zoowee.TestYYKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = TestYYKit/TestYYKit_Bridge_Header.h;
@@ -689,11 +787,12 @@
 		};
 		CD9A2B291D45E1C500BC5E43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4222B8E16342F24DC2FA2AE0 /* Pods-TestYYKit.release.xcconfig */;
+			baseConfigurationReference = CD97107C1D64B71900A1BF2B /* RealseConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestYYKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" －D ${CONFIG_FLAG}";
 				PRODUCT_BUNDLE_IDENTIFIER = Zoowee.TestYYKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = TestYYKit/TestYYKit_Bridge_Header.h;
@@ -753,6 +852,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD9A2B251D45E1C500BC5E43 /* Debug */,
+				CD9710761D64B60C00A1BF2B /* ReleaseTest */,
 				CD9A2B261D45E1C500BC5E43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -762,6 +862,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD9A2B281D45E1C500BC5E43 /* Debug */,
+				CD9710771D64B60C00A1BF2B /* ReleaseTest */,
 				CD9A2B291D45E1C500BC5E43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -771,6 +872,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD9A2B2B1D45E1C500BC5E43 /* Debug */,
+				CD9710781D64B60C00A1BF2B /* ReleaseTest */,
 				CD9A2B2C1D45E1C500BC5E43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -780,6 +882,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD9A2B2E1D45E1C500BC5E43 /* Debug */,
+				CD9710791D64B60C00A1BF2B /* ReleaseTest */,
 				CD9A2B2F1D45E1C500BC5E43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

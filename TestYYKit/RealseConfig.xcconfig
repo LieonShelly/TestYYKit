@@ -1,0 +1,13 @@
+//
+//  RealseConfig.xcconfig
+//  TestYYKit
+//
+//  Created by lieon on 16/8/17.
+//  Copyright © 2016年 lieon. All rights reserved.
+//
+
+
+#include "CommonConfig.xcconfig"
+#include "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.release.xcconfig"
+APP_DISPLAY_NAME = 真名
+CONFIG_FLAG = RELEASE

@@ -1,0 +1,14 @@
+//
+//  DebugConfig.xcconfig
+//  TestYYKit
+//
+//  Created by lieon on 16/8/17.
+//  Copyright © 2016年 lieon. All rights reserved.
+//
+
+
+#include "CommonConfig.xcconfig"
+
+#include "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.debug.xcconfig"
+APP_DISPLAY_NAME = 测试服
+CONFIG_FLAG = DEBUG
