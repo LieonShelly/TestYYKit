@@ -18,11 +18,11 @@
 		CD97107F1D64BC1200A1BF2B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD97107E1D64BC1200A1BF2B /* AppConfig.swift */; };
 		CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */; };
 		CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B041D45E1C500BC5E43 /* ViewController.swift */; };
-		CD9A2B081D45E1C500BC5E43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A2B061D45E1C500BC5E43 /* Main.storyboard */; };
 		CD9A2B0A1D45E1C500BC5E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9A2B091D45E1C500BC5E43 /* Assets.xcassets */; };
 		CD9A2B0D1D45E1C500BC5E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A2B0B1D45E1C500BC5E43 /* LaunchScreen.storyboard */; };
 		CD9A2B181D45E1C500BC5E43 /* TestYYKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B171D45E1C500BC5E43 /* TestYYKitTests.swift */; };
 		CD9A2B231D45E1C500BC5E43 /* TestYYKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B221D45E1C500BC5E43 /* TestYYKitUITests.swift */; };
+		CD9A5C681D65B3AB0049993E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A5C671D65B3AB0049993E /* Main.storyboard */; };
 		CD9EE3CC1D5A30BC00928CBA /* ResponderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3CA1D5A2E2000928CBA /* ResponderTableViewController.swift */; };
 		CD9EE3CF1D5A3A7400928CBA /* HZURLNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3CE1D5A3A7400928CBA /* HZURLNavigation.m */; };
 		CD9EE3D21D5A3B1400928CBA /* NSObject+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3D11D5A3B1400928CBA /* NSObject+HZExtend.m */; };
@@ -31,6 +31,8 @@
 		CDB432B81D5865A500BB037E /* NetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB432B71D5865A500BB037E /* NetViewController.swift */; };
 		CDBC20791D5CB8C900B321BC /* YYText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBC20781D5CB8C900B321BC /* YYText.framework */; };
 		CDCCF3AA1D58D2A7005C7DED /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCCF3A91D58D2A7005C7DED /* ChatViewController.swift */; };
+		CDDD22551D65BB1D000BFCC2 /* SocketSeverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDD22541D65BB1D000BFCC2 /* SocketSeverViewController.swift */; };
+		CDDD22571D65BB32000BFCC2 /* SocketClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDD22561D65BB32000BFCC2 /* SocketClientViewController.swift */; };
 		CDF106AE1D585BB900D35763 /* TheResourceStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF106AD1D585BB900D35763 /* TheResourceStruct.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,15 +63,10 @@
 		CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		CD5ED6231D48870100587C7D /* ProTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProTableViewController.swift; sourceTree = "<group>"; };
-		CD97107A1D64B70100A1BF2B /* CommonConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonConfig.xcconfig; sourceTree = "<group>"; };
-		CD97107B1D64B70C00A1BF2B /* DebugConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugConfig.xcconfig; sourceTree = "<group>"; };
-		CD97107C1D64B71900A1BF2B /* RealseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RealseConfig.xcconfig; sourceTree = "<group>"; };
-		CD97107D1D64B72B00A1BF2B /* ReleaseTestConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseTestConfig.xcconfig; sourceTree = "<group>"; };
 		CD97107E1D64BC1200A1BF2B /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		CD9A2AFF1D45E1C500BC5E43 /* TestYYKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestYYKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TestYYKit/AppDelegate.swift; sourceTree = "<group>"; };
 		CD9A2B041D45E1C500BC5E43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD9A2B071D45E1C500BC5E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD9A2B091D45E1C500BC5E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD9A2B0C1D45E1C500BC5E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD9A2B0E1D45E1C500BC5E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +77,7 @@
 		CD9A2B221D45E1C500BC5E43 /* TestYYKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestYYKitUITests.swift; sourceTree = "<group>"; };
 		CD9A2B241D45E1C500BC5E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD9A2B321D45E2DC00BC5E43 /* TestYYKit_Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TestYYKit_Bridge_Header.h; path = TestYYKit/TestYYKit_Bridge_Header.h; sourceTree = "<group>"; };
+		CD9A5C671D65B3AB0049993E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CD9EE3CA1D5A2E2000928CBA /* ResponderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponderTableViewController.swift; sourceTree = "<group>"; };
 		CD9EE3CD1D5A3A7400928CBA /* HZURLNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZURLNavigation.h; sourceTree = "<group>"; };
 		CD9EE3CE1D5A3A7400928CBA /* HZURLNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZURLNavigation.m; sourceTree = "<group>"; };
@@ -91,6 +89,8 @@
 		CDBC20761D5CB8C200B321BC /* YYKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TestYYKit-dyikdfgwbpejdoapbiefthzmcjyc/Build/Products/Debug-iphonesimulator/YYKit/YYKit.framework"; sourceTree = "<group>"; };
 		CDBC20781D5CB8C900B321BC /* YYText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYText.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TestYYKit-dyikdfgwbpejdoapbiefthzmcjyc/Build/Products/Debug-iphonesimulator/YYText/YYText.framework"; sourceTree = "<group>"; };
 		CDCCF3A91D58D2A7005C7DED /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CDDD22541D65BB1D000BFCC2 /* SocketSeverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketSeverViewController.swift; sourceTree = "<group>"; };
+		CDDD22561D65BB32000BFCC2 /* SocketClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClientViewController.swift; sourceTree = "<group>"; };
 		CDF106AD1D585BB900D35763 /* TheResourceStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheResourceStruct.swift; sourceTree = "<group>"; };
 		EFEC33DE950C287F9D1E94EA /* Pods-TestYYKit.releasetest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYYKit.releasetest.xcconfig"; path = "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.releasetest.xcconfig"; sourceTree = "<group>"; };
 		FD53157E209F208A16DEBC9B /* Pods_TestYYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestYYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,10 +241,6 @@
 			isa = PBXGroup;
 			children = (
 				CD97107E1D64BC1200A1BF2B /* AppConfig.swift */,
-				CD97107A1D64B70100A1BF2B /* CommonConfig.xcconfig */,
-				CD97107B1D64B70C00A1BF2B /* DebugConfig.xcconfig */,
-				CD97107C1D64B71900A1BF2B /* RealseConfig.xcconfig */,
-				CD97107D1D64B72B00A1BF2B /* ReleaseTestConfig.xcconfig */,
 				CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */,
 				CD9A2B321D45E2DC00BC5E43 /* TestYYKit_Bridge_Header.h */,
 				CD9A2B011D45E1C500BC5E43 /* TestYYKit */,
@@ -276,9 +272,10 @@
 				CDF106AC1D585A4100D35763 /* 6. Swift Talk -- NetWorking测试 */,
 				CDCCF3A81D58D28C005C7DED /* 7.JSQMessagesViewController测试 */,
 				CD9EE3C91D5A2E0300928CBA /* 8.测试响应链 */,
+				CDCB7D711D65ABD10020A96B /* 9.测试Socket通信 */,
 				CD9A2B041D45E1C500BC5E43 /* ViewController.swift */,
 				CD1F71C01D47028300AFD9A7 /* Post.swift */,
-				CD9A2B061D45E1C500BC5E43 /* Main.storyboard */,
+				CD9A5C671D65B3AB0049993E /* Main.storyboard */,
 				CD9A2B091D45E1C500BC5E43 /* Assets.xcassets */,
 				CD9A2B0B1D45E1C500BC5E43 /* LaunchScreen.storyboard */,
 				CD9A2B0E1D45E1C500BC5E43 /* Info.plist */,
@@ -318,6 +315,15 @@
 			);
 			name = "8.测试响应链";
 			path = "6. Swift Talk -- NetWorking测试/7.JSQMessagesViewController测试/8.测试响应链";
+			sourceTree = "<group>";
+		};
+		CDCB7D711D65ABD10020A96B /* 9.测试Socket通信 */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD22541D65BB1D000BFCC2 /* SocketSeverViewController.swift */,
+				CDDD22561D65BB32000BFCC2 /* SocketClientViewController.swift */,
+			);
+			path = "9.测试Socket通信";
 			sourceTree = "<group>";
 		};
 		CDCCF3A81D58D28C005C7DED /* 7.JSQMessagesViewController测试 */ = {
@@ -457,10 +463,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD1F71BD1D46FE1C00AFD9A7 /* hideSections.js in Resources */,
+				CD9A5C681D65B3AB0049993E /* Main.storyboard in Resources */,
 				CD9A2B0D1D45E1C500BC5E43 /* LaunchScreen.storyboard in Resources */,
 				CD1F71BF1D4700FC00AFD9A7 /* getPost.js in Resources */,
 				CD9A2B0A1D45E1C500BC5E43 /* Assets.xcassets in Resources */,
-				CD9A2B081D45E1C500BC5E43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,11 +543,13 @@
 				CD97107F1D64BC1200A1BF2B /* AppConfig.swift in Sources */,
 				CDF106AE1D585BB900D35763 /* TheResourceStruct.swift in Sources */,
 				CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */,
+				CDDD22571D65BB32000BFCC2 /* SocketClientViewController.swift in Sources */,
 				CDCCF3AA1D58D2A7005C7DED /* ChatViewController.swift in Sources */,
 				CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */,
 				CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */,
 				CD9EE3D41D5A3DC700928CBA /* THURLNavigation.swift in Sources */,
 				CD00E2111D485668004A1020 /* AlamoTableViewController.swift in Sources */,
+				CDDD22551D65BB1D000BFCC2 /* SocketSeverViewController.swift in Sources */,
 				CD9EE3D21D5A3B1400928CBA /* NSObject+HZExtend.m in Sources */,
 				CDB432B41D5862A300BB037E /* Network.swift in Sources */,
 				CDB432B81D5865A500BB037E /* NetViewController.swift in Sources */,
@@ -584,14 +592,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CD9A2B061D45E1C500BC5E43 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD9A2B071D45E1C500BC5E43 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CD9A2B0B1D45E1C500BC5E43 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -651,12 +651,12 @@
 		};
 		CD9710771D64B60C00A1BF2B /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD97107D1D64B72B00A1BF2B /* ReleaseTestConfig.xcconfig */;
+			baseConfigurationReference = EFEC33DE950C287F9D1E94EA /* Pods-TestYYKit.releasetest.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestYYKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" －D ${CONFIG_FLAG}";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = Zoowee.TestYYKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = TestYYKit/TestYYKit_Bridge_Header.h;
@@ -773,12 +773,12 @@
 		};
 		CD9A2B281D45E1C500BC5E43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD97107B1D64B70C00A1BF2B /* DebugConfig.xcconfig */;
+			baseConfigurationReference = A941E3658C440D753DB647AB /* Pods-TestYYKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestYYKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" －D ${CONFIG_FLAG}";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = Zoowee.TestYYKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = TestYYKit/TestYYKit_Bridge_Header.h;
@@ -787,12 +787,12 @@
 		};
 		CD9A2B291D45E1C500BC5E43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD97107C1D64B71900A1BF2B /* RealseConfig.xcconfig */;
+			baseConfigurationReference = 4222B8E16342F24DC2FA2AE0 /* Pods-TestYYKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestYYKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" －D ${CONFIG_FLAG}";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = Zoowee.TestYYKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = TestYYKit/TestYYKit_Bridge_Header.h;

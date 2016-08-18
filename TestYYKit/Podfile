@@ -14,6 +14,7 @@ pod 'Reusable'
 pod 'Alamofire'
 pod 'JSQMessagesViewController'
 pod 'YYText'
+pod 'CocoaAsyncSocket'  
 end
 target 'TestYYKit' do
 pods
