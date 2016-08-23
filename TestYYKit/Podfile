@@ -1,7 +1,10 @@
+
+source 'https://github.com/CocoaPods/Specs.git'
+
 platform :ios, '8.0'
 use_frameworks!
 def pods
-pod "SnapKit"
+pod 'SnapKit'
 pod "SDWebImage"
 pod "TYAlertController"
 pod "SVProgressHUD"
@@ -14,7 +17,8 @@ pod 'Reusable'
 pod 'Alamofire'
 pod 'JSQMessagesViewController'
 pod 'YYText'
-pod 'CocoaAsyncSocket'  
+pod 'CocoaAsyncSocket'
+pod 'SKPhotoBrowser'
 end
 target 'TestYYKit' do
 pods

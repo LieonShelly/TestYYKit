@@ -53,6 +53,7 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - SKPhotoBrowser (2.0.2)
   - SnapKit (0.21.1)
   - SVProgressHUD (2.0.3)
   - TYAlertController (1.1.6)
@@ -69,6 +70,7 @@ DEPENDENCIES:
   - PromiseKit (~> 3.2)
   - Reusable
   - SDWebImage
+  - SKPhotoBrowser
   - SnapKit
   - SVProgressHUD
   - TYAlertController
@@ -87,11 +89,12 @@ SPEC CHECKSUMS:
   PromiseKit: 1db024241265f428137a9f3c00ff9590740c4be6
   Reusable: 0fec1f7fedf69acbc7710fc7cab86a1a1a3f2542
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SKPhotoBrowser: a23a4125deca7451d298248c7eafc8332fb909df
   SnapKit: bbad04cb016c7cead63965f16b00c09318d271ee
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   TYAlertController: dfc58e9950d30f255f13c7e578496ec0cc9f0ef5
   YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
 
-PODFILE CHECKSUM: f21438b02dcd76425b0987135561f9b3de10dd17
+PODFILE CHECKSUM: 77da3de25f8da9332eafc9d3c9f72e0d30fbbe4f
 
 COCOAPODS: 1.0.1

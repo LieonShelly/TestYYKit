@@ -18,6 +18,7 @@
 		CD57AB1C1D6C2EFD00FFCD94 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */; };
 		CD57AB1D1D6C2F4700FFCD94 /* LTMorphingLabel.framework in Sources */ = {isa = PBXBuildFile; fileRef = CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */; };
 		CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5ED6231D48870100587C7D /* ProTableViewController.swift */; };
+		CD665A311D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD665A301D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift */; };
 		CD97107F1D64BC1200A1BF2B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD97107E1D64BC1200A1BF2B /* AppConfig.swift */; };
 		CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */; };
 		CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B041D45E1C500BC5E43 /* ViewController.swift */; };
@@ -69,6 +70,7 @@
 		CD57AB191D6C17F800FFCD94 /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
 		CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
 		CD5ED6231D48870100587C7D /* ProTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProTableViewController.swift; sourceTree = "<group>"; };
+		CD665A301D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserViewController.swift; sourceTree = "<group>"; };
 		CD97107E1D64BC1200A1BF2B /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		CD9A2AFF1D45E1C500BC5E43 /* TestYYKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestYYKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TestYYKit/AppDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +247,14 @@
 			path = "5.PromiseKit测试";
 			sourceTree = "<group>";
 		};
+		CD665A2F1D6CA20C00BB67DE /* 11. 测试SKPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				CD665A301D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift */,
+			);
+			path = "11. 测试SKPhotoBrowser";
+			sourceTree = "<group>";
+		};
 		CD9A2AF61D45E1C500BC5E43 = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +293,7 @@
 				CD9EE3C91D5A2E0300928CBA /* 8.测试响应链 */,
 				CDCB7D711D65ABD10020A96B /* 9.测试Socket通信 */,
 				CDF6DEAB1D6BE9520090A02C /* 10.测试LTMorphingLabel */,
+				CD665A2F1D6CA20C00BB67DE /* 11. 测试SKPhotoBrowser */,
 				CD9A2B041D45E1C500BC5E43 /* ViewController.swift */,
 				CD1F71C01D47028300AFD9A7 /* Post.swift */,
 				CD9A5C671D65B3AB0049993E /* Main.storyboard */,
@@ -590,6 +601,7 @@
 				CD9EE3D41D5A3DC700928CBA /* THURLNavigation.swift in Sources */,
 				CD00E2111D485668004A1020 /* AlamoTableViewController.swift in Sources */,
 				CDDD22551D65BB1D000BFCC2 /* SocketSeverViewController.swift in Sources */,
+				CD665A311D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift in Sources */,
 				CD9EE3D21D5A3B1400928CBA /* NSObject+HZExtend.m in Sources */,
 				CDB432B41D5862A300BB037E /* Network.swift in Sources */,
 				CDB432B81D5865A500BB037E /* NetViewController.swift in Sources */,
