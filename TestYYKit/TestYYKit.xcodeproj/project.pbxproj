@@ -14,6 +14,9 @@
 		CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71C01D47028300AFD9A7 /* Post.swift */; };
 		CD1F71CB1D47124800AFD9A7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */; };
 		CD1F71CD1D47134400AFD9A7 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */; };
+		CD57AB1A1D6C17F800FFCD94 /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD57AB191D6C17F800FFCD94 /* ADViewController.swift */; };
+		CD57AB1C1D6C2EFD00FFCD94 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */; };
+		CD57AB1D1D6C2F4700FFCD94 /* LTMorphingLabel.framework in Sources */ = {isa = PBXBuildFile; fileRef = CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */; };
 		CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5ED6231D48870100587C7D /* ProTableViewController.swift */; };
 		CD97107F1D64BC1200A1BF2B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD97107E1D64BC1200A1BF2B /* AppConfig.swift */; };
 		CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */; };
@@ -34,6 +37,7 @@
 		CDDD22551D65BB1D000BFCC2 /* SocketSeverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDD22541D65BB1D000BFCC2 /* SocketSeverViewController.swift */; };
 		CDDD22571D65BB32000BFCC2 /* SocketClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDD22561D65BB32000BFCC2 /* SocketClientViewController.swift */; };
 		CDF106AE1D585BB900D35763 /* TheResourceStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF106AD1D585BB900D35763 /* TheResourceStruct.swift */; };
+		CDF6DEAD1D6BE9710090A02C /* LTMorphingLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF6DEAC1D6BE9710090A02C /* LTMorphingLabelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,8 @@
 		CD1F71C01D47028300AFD9A7 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		CD57AB191D6C17F800FFCD94 /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
+		CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
 		CD5ED6231D48870100587C7D /* ProTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProTableViewController.swift; sourceTree = "<group>"; };
 		CD97107E1D64BC1200A1BF2B /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		CD9A2AFF1D45E1C500BC5E43 /* TestYYKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestYYKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +98,7 @@
 		CDDD22541D65BB1D000BFCC2 /* SocketSeverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketSeverViewController.swift; sourceTree = "<group>"; };
 		CDDD22561D65BB32000BFCC2 /* SocketClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClientViewController.swift; sourceTree = "<group>"; };
 		CDF106AD1D585BB900D35763 /* TheResourceStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheResourceStruct.swift; sourceTree = "<group>"; };
+		CDF6DEAC1D6BE9710090A02C /* LTMorphingLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTMorphingLabelViewController.swift; sourceTree = "<group>"; };
 		EFEC33DE950C287F9D1E94EA /* Pods-TestYYKit.releasetest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYYKit.releasetest.xcconfig"; path = "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.releasetest.xcconfig"; sourceTree = "<group>"; };
 		FD53157E209F208A16DEBC9B /* Pods_TestYYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestYYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,6 +110,7 @@
 			files = (
 				CDBC20791D5CB8C900B321BC /* YYText.framework in Frameworks */,
 				B22943B845CA6DA09C660B58 /* Pods_TestYYKit.framework in Frameworks */,
+				CD57AB1C1D6C2EFD00FFCD94 /* LTMorphingLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +248,7 @@
 		CD9A2AF61D45E1C500BC5E43 = {
 			isa = PBXGroup;
 			children = (
+				CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */,
 				CD97107E1D64BC1200A1BF2B /* AppConfig.swift */,
 				CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */,
 				CD9A2B321D45E2DC00BC5E43 /* TestYYKit_Bridge_Header.h */,
@@ -273,6 +282,7 @@
 				CDCCF3A81D58D28C005C7DED /* 7.JSQMessagesViewController测试 */,
 				CD9EE3C91D5A2E0300928CBA /* 8.测试响应链 */,
 				CDCB7D711D65ABD10020A96B /* 9.测试Socket通信 */,
+				CDF6DEAB1D6BE9520090A02C /* 10.测试LTMorphingLabel */,
 				CD9A2B041D45E1C500BC5E43 /* ViewController.swift */,
 				CD1F71C01D47028300AFD9A7 /* Post.swift */,
 				CD9A5C671D65B3AB0049993E /* Main.storyboard */,
@@ -345,6 +355,16 @@
 			path = "6. Swift Talk -- NetWorking测试";
 			sourceTree = "<group>";
 		};
+		CDF6DEAB1D6BE9520090A02C /* 10.测试LTMorphingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				CDF6DEAC1D6BE9710090A02C /* LTMorphingLabelViewController.swift */,
+				CD57AB191D6C17F800FFCD94 /* ADViewController.swift */,
+			);
+			name = "10.测试LTMorphingLabel";
+			path = "9.测试Socket通信/10.测试LTMorphingLabel";
+			sourceTree = "<group>";
+		};
 		DABC75D8C37BA7B44E32B2AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +388,7 @@
 				CD9A2AFD1D45E1C500BC5E43 /* Resources */,
 				3D145ACEC0C7ADA7F03B57E1 /* [CP] Embed Pods Frameworks */,
 				591B3C6701FA77F1679D63AD /* [CP] Copy Pods Resources */,
+				CDF6DEAA1D6BE8320090A02C /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -532,6 +553,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		CDF6DEAA1D6BE8320090A02C /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/LTMorphingLabel.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -539,11 +576,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD57AB1D1D6C2F4700FFCD94 /* LTMorphingLabel.framework in Sources */,
 				CD9EE3CC1D5A30BC00928CBA /* ResponderTableViewController.swift in Sources */,
+				CD57AB1A1D6C17F800FFCD94 /* ADViewController.swift in Sources */,
 				CD97107F1D64BC1200A1BF2B /* AppConfig.swift in Sources */,
 				CDF106AE1D585BB900D35763 /* TheResourceStruct.swift in Sources */,
 				CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */,
 				CDDD22571D65BB32000BFCC2 /* SocketClientViewController.swift in Sources */,
+				CDF6DEAD1D6BE9710090A02C /* LTMorphingLabelViewController.swift in Sources */,
 				CDCCF3AA1D58D2A7005C7DED /* ChatViewController.swift in Sources */,
 				CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */,
 				CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */,
@@ -654,6 +694,26 @@
 			baseConfigurationReference = EFEC33DE950C287F9D1E94EA /* Pods-TestYYKit.releasetest.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FMDB\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/OMGHTTPURLRQ\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ObjectMapper\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PromiseKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Reusable\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SnapKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TYAlertController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/YYText\"",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestYYKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
@@ -776,6 +836,26 @@
 			baseConfigurationReference = A941E3658C440D753DB647AB /* Pods-TestYYKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FMDB\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/OMGHTTPURLRQ\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ObjectMapper\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PromiseKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Reusable\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SnapKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TYAlertController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/YYText\"",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestYYKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
@@ -790,6 +870,26 @@
 			baseConfigurationReference = 4222B8E16342F24DC2FA2AE0 /* Pods-TestYYKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FMDB\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/OMGHTTPURLRQ\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ObjectMapper\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PromiseKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Reusable\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SnapKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TYAlertController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/YYText\"",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestYYKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";

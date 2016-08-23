@@ -254,6 +254,26 @@
             </objects>
             <point key="canvasLocation" x="197" y="-429"/>
         </scene>
+        <!--Morphing Label View Controller-->
+        <scene sceneID="FO4-yu-hZz">
+            <objects>
+                <viewController storyboardIdentifier="LTMorphingLabelViewController" id="hWR-dX-85S" customClass="LTMorphingLabelViewController" customModule="TestYYKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bWw-Vl-hMw"/>
+                        <viewControllerLayoutGuide type="bottom" id="DIE-rb-9Kk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CY3-H6-nYV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sQX-vO-JdE"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wne-SJ-NQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558.5" y="-429.5"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YYs-zz-3Mw">
             <objects>
@@ -271,6 +291,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3v-pQ-PL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-623" y="-98"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4a5-8n-VnF">
+            <objects>
+                <navigationController storyboardIdentifier="Navi" automaticallyAdjustsScrollViewInsets="NO" id="HSr-8s-Mca" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3cQ-ms-Rhv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hWR-dX-85S" kind="relationship" relationship="rootViewController" id="asv-1U-NRQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpQ-FI-Fpq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="-430"/>
         </scene>
     </scenes>
 </document>
