@@ -28,6 +28,7 @@ class SKPhotoBrowserViewController: UIViewController {
             let image = UIImage(named: "\(i + 1)")
             if let image = image {
                 let  skphoto = SKPhoto.photoWithImage(image)
+                skphoto.caption = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
                 array.append(skphoto)
             }
         }

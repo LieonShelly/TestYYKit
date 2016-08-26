@@ -17,6 +17,9 @@
 		CD57AB1A1D6C17F800FFCD94 /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD57AB191D6C17F800FFCD94 /* ADViewController.swift */; };
 		CD57AB1C1D6C2EFD00FFCD94 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */; };
 		CD57AB1D1D6C2F4700FFCD94 /* LTMorphingLabel.framework in Sources */ = {isa = PBXBuildFile; fileRef = CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */; };
+		CD591E4F1D701C9D006E53BD /* FisrstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD591E4E1D701C9D006E53BD /* FisrstViewController.swift */; };
+		CD591E511D701CAD006E53BD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD591E501D701CAD006E53BD /* SecondViewController.swift */; };
+		CD591E531D701FE4006E53BD /* RevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD591E521D701FE4006E53BD /* RevealAnimator.swift */; };
 		CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5ED6231D48870100587C7D /* ProTableViewController.swift */; };
 		CD665A311D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD665A301D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift */; };
 		CD97107F1D64BC1200A1BF2B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD97107E1D64BC1200A1BF2B /* AppConfig.swift */; };
@@ -69,6 +72,9 @@
 		CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		CD57AB191D6C17F800FFCD94 /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
 		CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
+		CD591E4E1D701C9D006E53BD /* FisrstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisrstViewController.swift; sourceTree = "<group>"; };
+		CD591E501D701CAD006E53BD /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CD591E521D701FE4006E53BD /* RevealAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealAnimator.swift; sourceTree = "<group>"; };
 		CD5ED6231D48870100587C7D /* ProTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProTableViewController.swift; sourceTree = "<group>"; };
 		CD665A301D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserViewController.swift; sourceTree = "<group>"; };
 		CD97107E1D64BC1200A1BF2B /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
@@ -239,6 +245,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CD591E4D1D701C89006E53BD /* 12.测试push的转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				CD591E4E1D701C9D006E53BD /* FisrstViewController.swift */,
+				CD591E521D701FE4006E53BD /* RevealAnimator.swift */,
+				CD591E501D701CAD006E53BD /* SecondViewController.swift */,
+			);
+			path = "12.测试push的转场动画";
+			sourceTree = "<group>";
+		};
 		CD5ED6221D4886EC00587C7D /* 5.PromiseKit测试 */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +310,7 @@
 				CDCB7D711D65ABD10020A96B /* 9.测试Socket通信 */,
 				CDF6DEAB1D6BE9520090A02C /* 10.测试LTMorphingLabel */,
 				CD665A2F1D6CA20C00BB67DE /* 11. 测试SKPhotoBrowser */,
+				CD591E4D1D701C89006E53BD /* 12.测试push的转场动画 */,
 				CD9A2B041D45E1C500BC5E43 /* ViewController.swift */,
 				CD1F71C01D47028300AFD9A7 /* Post.swift */,
 				CD9A5C671D65B3AB0049993E /* Main.storyboard */,
@@ -587,6 +604,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD591E511D701CAD006E53BD /* SecondViewController.swift in Sources */,
 				CD57AB1D1D6C2F4700FFCD94 /* LTMorphingLabel.framework in Sources */,
 				CD9EE3CC1D5A30BC00928CBA /* ResponderTableViewController.swift in Sources */,
 				CD57AB1A1D6C17F800FFCD94 /* ADViewController.swift in Sources */,
@@ -595,10 +613,12 @@
 				CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */,
 				CDDD22571D65BB32000BFCC2 /* SocketClientViewController.swift in Sources */,
 				CDF6DEAD1D6BE9710090A02C /* LTMorphingLabelViewController.swift in Sources */,
+				CD591E531D701FE4006E53BD /* RevealAnimator.swift in Sources */,
 				CDCCF3AA1D58D2A7005C7DED /* ChatViewController.swift in Sources */,
 				CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */,
 				CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */,
 				CD9EE3D41D5A3DC700928CBA /* THURLNavigation.swift in Sources */,
+				CD591E4F1D701C9D006E53BD /* FisrstViewController.swift in Sources */,
 				CD00E2111D485668004A1020 /* AlamoTableViewController.swift in Sources */,
 				CDDD22551D65BB1D000BFCC2 /* SocketSeverViewController.swift in Sources */,
 				CD665A311D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift in Sources */,
