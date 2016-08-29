@@ -19,6 +19,8 @@ pod 'JSQMessagesViewController'
 pod 'YYText'
 pod 'CocoaAsyncSocket'
 pod 'SKPhotoBrowser'
+pod "ElasticTransition", "~> 3.0.0"
+
 end
 target 'TestYYKit' do
 pods

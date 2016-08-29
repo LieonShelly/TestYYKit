@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		B22943B845CA6DA09C660B58 /* Pods_TestYYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD53157E209F208A16DEBC9B /* Pods_TestYYKit.framework */; };
 		CD00E2111D485668004A1020 /* AlamoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00E2101D485668004A1020 /* AlamoTableViewController.swift */; };
+		CD1D19AD1D74113B00D7BDA4 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D19AC1D74113B00D7BDA4 /* InitialViewController.swift */; };
+		CD1D19AF1D74115000D7BDA4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D19AE1D74115000D7BDA4 /* AboutViewController.swift */; };
+		CD1D19B11D74116700D7BDA4 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D19B01D74116700D7BDA4 /* OptionViewController.swift */; };
+		CD1D19B31D741F4300D7BDA4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D19B21D741F4300D7BDA4 /* MenuViewController.swift */; };
+		CD1D19B51D74263B00D7BDA4 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D19B41D74263B00D7BDA4 /* ModalViewController.swift */; };
 		CD1F71BD1D46FE1C00AFD9A7 /* hideSections.js in Resources */ = {isa = PBXBuildFile; fileRef = CD1F71BC1D46FE1C00AFD9A7 /* hideSections.js */; };
 		CD1F71BF1D4700FC00AFD9A7 /* getPost.js in Resources */ = {isa = PBXBuildFile; fileRef = CD1F71BE1D4700FC00AFD9A7 /* getPost.js */; };
 		CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71C01D47028300AFD9A7 /* Post.swift */; };
@@ -65,6 +70,11 @@
 		4222B8E16342F24DC2FA2AE0 /* Pods-TestYYKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYYKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.release.xcconfig"; sourceTree = "<group>"; };
 		A941E3658C440D753DB647AB /* Pods-TestYYKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYYKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.debug.xcconfig"; sourceTree = "<group>"; };
 		CD00E2101D485668004A1020 /* AlamoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoTableViewController.swift; sourceTree = "<group>"; };
+		CD1D19AC1D74113B00D7BDA4 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		CD1D19AE1D74115000D7BDA4 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CD1D19B01D74116700D7BDA4 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
+		CD1D19B21D741F4300D7BDA4 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CD1D19B41D74263B00D7BDA4 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		CD1F71BC1D46FE1C00AFD9A7 /* hideSections.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hideSections.js; sourceTree = "<group>"; };
 		CD1F71BE1D4700FC00AFD9A7 /* getPost.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getPost.js; sourceTree = "<group>"; };
 		CD1F71C01D47028300AFD9A7 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -179,6 +189,18 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CD1D19AB1D7410E800D7BDA4 /* 13.测试ElasticTransition */ = {
+			isa = PBXGroup;
+			children = (
+				CD1D19AC1D74113B00D7BDA4 /* InitialViewController.swift */,
+				CD1D19AE1D74115000D7BDA4 /* AboutViewController.swift */,
+				CD1D19B01D74116700D7BDA4 /* OptionViewController.swift */,
+				CD1D19B21D741F4300D7BDA4 /* MenuViewController.swift */,
+				CD1D19B41D74263B00D7BDA4 /* ModalViewController.swift */,
+			);
+			path = "13.测试ElasticTransition";
 			sourceTree = "<group>";
 		};
 		CD1F71C61D470E1200AFD9A7 /* 2.TableView的视觉差效果 */ = {
@@ -311,6 +333,7 @@
 				CDF6DEAB1D6BE9520090A02C /* 10.测试LTMorphingLabel */,
 				CD665A2F1D6CA20C00BB67DE /* 11. 测试SKPhotoBrowser */,
 				CD591E4D1D701C89006E53BD /* 12.测试push的转场动画 */,
+				CD1D19AB1D7410E800D7BDA4 /* 13.测试ElasticTransition */,
 				CD9A2B041D45E1C500BC5E43 /* ViewController.swift */,
 				CD1F71C01D47028300AFD9A7 /* Post.swift */,
 				CD9A5C671D65B3AB0049993E /* Main.storyboard */,
@@ -605,6 +628,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD591E511D701CAD006E53BD /* SecondViewController.swift in Sources */,
+				CD1D19AD1D74113B00D7BDA4 /* InitialViewController.swift in Sources */,
 				CD57AB1D1D6C2F4700FFCD94 /* LTMorphingLabel.framework in Sources */,
 				CD9EE3CC1D5A30BC00928CBA /* ResponderTableViewController.swift in Sources */,
 				CD57AB1A1D6C17F800FFCD94 /* ADViewController.swift in Sources */,
@@ -612,11 +636,14 @@
 				CDF106AE1D585BB900D35763 /* TheResourceStruct.swift in Sources */,
 				CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */,
 				CDDD22571D65BB32000BFCC2 /* SocketClientViewController.swift in Sources */,
+				CD1D19B31D741F4300D7BDA4 /* MenuViewController.swift in Sources */,
 				CDF6DEAD1D6BE9710090A02C /* LTMorphingLabelViewController.swift in Sources */,
 				CD591E531D701FE4006E53BD /* RevealAnimator.swift in Sources */,
 				CDCCF3AA1D58D2A7005C7DED /* ChatViewController.swift in Sources */,
+				CD1D19AF1D74115000D7BDA4 /* AboutViewController.swift in Sources */,
 				CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */,
 				CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */,
+				CD1D19B51D74263B00D7BDA4 /* ModalViewController.swift in Sources */,
 				CD9EE3D41D5A3DC700928CBA /* THURLNavigation.swift in Sources */,
 				CD591E4F1D701C9D006E53BD /* FisrstViewController.swift in Sources */,
 				CD00E2111D485668004A1020 /* AlamoTableViewController.swift in Sources */,
@@ -627,6 +654,7 @@
 				CDB432B81D5865A500BB037E /* NetViewController.swift in Sources */,
 				CD1F71CD1D47134400AFD9A7 /* ImageTableViewCell.swift in Sources */,
 				CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */,
+				CD1D19B11D74116700D7BDA4 /* OptionViewController.swift in Sources */,
 				CD1F71CB1D47124800AFD9A7 /* TableViewController.swift in Sources */,
 				CD9EE3CF1D5A3A7400928CBA /* HZURLNavigation.m in Sources */,
 			);
