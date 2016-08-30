@@ -1,2 +1,3 @@
 github "lexrus/LTMorphingLabel"
 github "onevcat/Kingfisher" ~> 2.4
+github "ReactiveCocoa/ReactiveCocoa"

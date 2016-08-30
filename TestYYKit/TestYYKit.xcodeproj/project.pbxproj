@@ -27,6 +27,13 @@
 		CD591E531D701FE4006E53BD /* RevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD591E521D701FE4006E53BD /* RevealAnimator.swift */; };
 		CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5ED6231D48870100587C7D /* ProTableViewController.swift */; };
 		CD665A311D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD665A301D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift */; };
+		CD8A35911D753C080026A302 /* RACViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A35901D753C080026A302 /* RACViewController.swift */; };
+		CD8A35931D7560590026A302 /* RACSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A35921D7560590026A302 /* RACSubjectViewController.swift */; };
+		CD8A35951D7562160026A302 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A35941D7562160026A302 /* TwoViewController.swift */; };
+		CD8A35971D7566170026A302 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8A35961D7566170026A302 /* Result.framework */; };
+		CD8A35991D756F8B0026A302 /* RACCommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A35981D756F8B0026A302 /* RACCommandViewController.swift */; };
+		CD8A359B1D7574F30026A302 /* RACMultiConectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A359A1D7574F30026A302 /* RACMultiConectionViewController.swift */; };
+		CD8A359D1D7577C50026A302 /* RACTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A359C1D7577C50026A302 /* RACTestViewController.swift */; };
 		CD97107F1D64BC1200A1BF2B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD97107E1D64BC1200A1BF2B /* AppConfig.swift */; };
 		CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */; };
 		CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B041D45E1C500BC5E43 /* ViewController.swift */; };
@@ -87,6 +94,13 @@
 		CD591E521D701FE4006E53BD /* RevealAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealAnimator.swift; sourceTree = "<group>"; };
 		CD5ED6231D48870100587C7D /* ProTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProTableViewController.swift; sourceTree = "<group>"; };
 		CD665A301D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserViewController.swift; sourceTree = "<group>"; };
+		CD8A35901D753C080026A302 /* RACViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACViewController.swift; sourceTree = "<group>"; };
+		CD8A35921D7560590026A302 /* RACSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACSubjectViewController.swift; sourceTree = "<group>"; };
+		CD8A35941D7562160026A302 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		CD8A35961D7566170026A302 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		CD8A35981D756F8B0026A302 /* RACCommandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACCommandViewController.swift; sourceTree = "<group>"; };
+		CD8A359A1D7574F30026A302 /* RACMultiConectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACMultiConectionViewController.swift; sourceTree = "<group>"; };
+		CD8A359C1D7577C50026A302 /* RACTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACTestViewController.swift; sourceTree = "<group>"; };
 		CD97107E1D64BC1200A1BF2B /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		CD9A2AFF1D45E1C500BC5E43 /* TestYYKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestYYKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TestYYKit/AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +143,7 @@
 				CDBC20791D5CB8C900B321BC /* YYText.framework in Frameworks */,
 				B22943B845CA6DA09C660B58 /* Pods_TestYYKit.framework in Frameworks */,
 				CD57AB1C1D6C2EFD00FFCD94 /* LTMorphingLabel.framework in Frameworks */,
+				CD8A35971D7566170026A302 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +308,23 @@
 			path = "11. 测试SKPhotoBrowser";
 			sourceTree = "<group>";
 		};
+		CD8A358F1D753BF20026A302 /* 14.测试RAC */ = {
+			isa = PBXGroup;
+			children = (
+				CD8A35901D753C080026A302 /* RACViewController.swift */,
+				CD8A35921D7560590026A302 /* RACSubjectViewController.swift */,
+				CD8A35941D7562160026A302 /* TwoViewController.swift */,
+				CD8A35981D756F8B0026A302 /* RACCommandViewController.swift */,
+				CD8A359A1D7574F30026A302 /* RACMultiConectionViewController.swift */,
+				CD8A359C1D7577C50026A302 /* RACTestViewController.swift */,
+			);
+			path = "14.测试RAC";
+			sourceTree = "<group>";
+		};
 		CD9A2AF61D45E1C500BC5E43 = {
 			isa = PBXGroup;
 			children = (
+				CD8A35961D7566170026A302 /* Result.framework */,
 				CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */,
 				CD97107E1D64BC1200A1BF2B /* AppConfig.swift */,
 				CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */,
@@ -334,6 +363,7 @@
 				CD665A2F1D6CA20C00BB67DE /* 11. 测试SKPhotoBrowser */,
 				CD591E4D1D701C89006E53BD /* 12.测试push的转场动画 */,
 				CD1D19AB1D7410E800D7BDA4 /* 13.测试ElasticTransition */,
+				CD8A358F1D753BF20026A302 /* 14.测试RAC */,
 				CD9A2B041D45E1C500BC5E43 /* ViewController.swift */,
 				CD1F71C01D47028300AFD9A7 /* Post.swift */,
 				CD9A5C671D65B3AB0049993E /* Main.storyboard */,
@@ -612,6 +642,8 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/LTMorphingLabel.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -654,9 +686,15 @@
 				CDB432B81D5865A500BB037E /* NetViewController.swift in Sources */,
 				CD1F71CD1D47134400AFD9A7 /* ImageTableViewCell.swift in Sources */,
 				CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */,
+				CD8A35991D756F8B0026A302 /* RACCommandViewController.swift in Sources */,
 				CD1D19B11D74116700D7BDA4 /* OptionViewController.swift in Sources */,
 				CD1F71CB1D47124800AFD9A7 /* TableViewController.swift in Sources */,
 				CD9EE3CF1D5A3A7400928CBA /* HZURLNavigation.m in Sources */,
+				CD8A359D1D7577C50026A302 /* RACTestViewController.swift in Sources */,
+				CD8A359B1D7574F30026A302 /* RACMultiConectionViewController.swift in Sources */,
+				CD8A35931D7560590026A302 /* RACSubjectViewController.swift in Sources */,
+				CD8A35911D753C080026A302 /* RACViewController.swift in Sources */,
+				CD8A35951D7562160026A302 /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

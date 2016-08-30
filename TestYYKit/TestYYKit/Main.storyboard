@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kDv-Fm-OAp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="A4s-Qd-2N4">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -354,6 +354,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Te-8B-Xia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2575.5" y="-1143.5"/>
+        </scene>
+        <!--Subject View Controller-->
+        <scene sceneID="IEE-kN-fCJ">
+            <objects>
+                <viewController id="A4s-Qd-2N4" customClass="RACSubjectViewController" customModule="TestYYKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0og-ym-KYO"/>
+                        <viewControllerLayoutGuide type="bottom" id="gvi-mO-YGH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cgw-Ym-01w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPM-qO-b5o">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="A4s-Qd-2N4" eventType="touchUpInside" id="S8d-YD-w0b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZPM-qO-b5o" firstAttribute="centerX" secondItem="Cgw-Ym-01w" secondAttribute="centerX" id="qoD-nd-Vfo"/>
+                            <constraint firstItem="ZPM-qO-b5o" firstAttribute="centerY" secondItem="Cgw-Ym-01w" secondAttribute="centerY" id="vY0-H2-2p0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Atc-K2-xZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3075" y="-1216"/>
+        </scene>
+        <!--Two View Controller-->
+        <scene sceneID="5NY-dx-pFF">
+            <objects>
+                <viewController storyboardIdentifier="two" id="989-lx-oZR" customClass="TwoViewController" customModule="TestYYKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gR9-2P-clS"/>
+                        <viewControllerLayoutGuide type="bottom" id="emo-r7-Kbp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AVH-Mf-63q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeC-2J-LLF">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btbClick:" destination="989-lx-oZR" eventType="touchUpInside" id="rf0-Pf-JXL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HeC-2J-LLF" firstAttribute="centerY" secondItem="AVH-Mf-63q" secondAttribute="centerY" id="IJ7-j1-e4Z"/>
+                            <constraint firstItem="HeC-2J-LLF" firstAttribute="centerX" secondItem="AVH-Mf-63q" secondAttribute="centerX" id="uTK-z4-COe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6OS-NF-eUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3501" y="-1272"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="L8n-PB-Acn">
