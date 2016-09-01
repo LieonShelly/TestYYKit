@@ -13,6 +13,7 @@ class RACSubjectViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         // RACSubject:信号提供者
         //1.创建信号 
         let subject = RACSubject()

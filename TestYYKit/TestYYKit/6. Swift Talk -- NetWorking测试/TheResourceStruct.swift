@@ -8,23 +8,6 @@
 
 import UIKit
 
-
-protocol EndPointProtocol {
-    var endpoint: String { get }
-    var baseURL: String { get }
-    var path: String { get }
-    
-    func URL() -> String
-}
-
-extension EndPointProtocol {
-    func URL() -> String {
-        return self.baseURL + self.path + self.endpoint
-    }
-}
-
-protocol UserProtocol: EndPointProtocol {}
-
 public enum HomeBasicPath: UserProtocol {
     case HomeBanner
     case HomeData

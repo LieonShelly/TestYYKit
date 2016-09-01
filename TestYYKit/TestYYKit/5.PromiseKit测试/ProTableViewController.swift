@@ -13,10 +13,21 @@ class ProTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       setupPro()
+        requestTestData()
     }
     
+    private func requestTestData() {
+        let req: Promise<LifeHomeData> = handRequest(Router.Endpoint(endPoint: HomeBasicPath.HomeData, param: nil))
+        req.then { (value) -> Void in
+            debugPrint("value是上一级获取的数据，在这个then的闭包中进行处理应用这些数据")
+        }.always { 
+            debugPrint("always是在正确的获取了数据，在不出错的情况下执行")
+           // eg: MBProgressHUD.hideHUDForView(self.view, animated: true)
+        }.error { (error) in
+            debugPrint("数据返回错误错误时执行，用于显示错误")
+        }
+        
+    }
     private func setupPro()
     {
         

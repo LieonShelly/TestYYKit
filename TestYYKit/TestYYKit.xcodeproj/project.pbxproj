@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		B22943B845CA6DA09C660B58 /* Pods_TestYYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD53157E209F208A16DEBC9B /* Pods_TestYYKit.framework */; };
 		CD00E2111D485668004A1020 /* AlamoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00E2101D485668004A1020 /* AlamoTableViewController.swift */; };
+		CD11FC521D77CEB100399F2D /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11FC511D77CEB100399F2D /* Encryption.swift */; };
+		CD11FC541D77D07700399F2D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11FC531D77D07700399F2D /* Extension.swift */; };
+		CD11FC5D1D77D9EA00399F2D /* NSString+AES128.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11FC571D77D9EA00399F2D /* NSString+AES128.m */; };
+		CD11FC5E1D77D9EA00399F2D /* libXG-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD11FC591D77D9EA00399F2D /* libXG-SDK.a */; };
+		CD11FC5F1D77D9EA00399F2D /* ReleaseNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = CD11FC5A1D77D9EA00399F2D /* ReleaseNotes.txt */; };
+		CD11FC611D77FDDF00399F2D /* BaseReponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11FC601D77FDDF00399F2D /* BaseReponseObject.swift */; };
+		CD11FC631D77FE9D00399F2D /* Transforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11FC621D77FE9D00399F2D /* Transforms.swift */; };
+		CD11FC651D780DA000399F2D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11FC641D780DA000399F2D /* AppError.swift */; };
 		CD1D19AD1D74113B00D7BDA4 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D19AC1D74113B00D7BDA4 /* InitialViewController.swift */; };
 		CD1D19AF1D74115000D7BDA4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D19AE1D74115000D7BDA4 /* AboutViewController.swift */; };
 		CD1D19B11D74116700D7BDA4 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D19B01D74116700D7BDA4 /* OptionViewController.swift */; };
@@ -19,6 +27,7 @@
 		CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71C01D47028300AFD9A7 /* Post.swift */; };
 		CD1F71CB1D47124800AFD9A7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */; };
 		CD1F71CD1D47134400AFD9A7 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */; };
+		CD46161E1D7676E500F39E18 /* RequetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46161D1D7676E500F39E18 /* RequetManager.swift */; };
 		CD57AB1A1D6C17F800FFCD94 /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD57AB191D6C17F800FFCD94 /* ADViewController.swift */; };
 		CD57AB1C1D6C2EFD00FFCD94 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */; };
 		CD57AB1D1D6C2F4700FFCD94 /* LTMorphingLabel.framework in Sources */ = {isa = PBXBuildFile; fileRef = CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */; };
@@ -46,6 +55,9 @@
 		CD9EE3CF1D5A3A7400928CBA /* HZURLNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3CE1D5A3A7400928CBA /* HZURLNavigation.m */; };
 		CD9EE3D21D5A3B1400928CBA /* NSObject+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3D11D5A3B1400928CBA /* NSObject+HZExtend.m */; };
 		CD9EE3D41D5A3DC700928CBA /* THURLNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3D31D5A3DC700928CBA /* THURLNavigation.swift */; };
+		CDAD7E911D7730B500CA7DA1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAD7E901D7730B500CA7DA1 /* Router.swift */; };
+		CDAD7E931D7734B900CA7DA1 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAD7E921D7734B900CA7DA1 /* NetWork.swift */; };
+		CDAD7E951D7734EE00CA7DA1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAD7E941D7734EE00CA7DA1 /* Model.swift */; };
 		CDB432B41D5862A300BB037E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB432B31D5862A300BB037E /* Network.swift */; };
 		CDB432B81D5865A500BB037E /* NetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB432B71D5865A500BB037E /* NetViewController.swift */; };
 		CDBC20791D5CB8C900B321BC /* YYText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBC20781D5CB8C900B321BC /* YYText.framework */; };
@@ -77,6 +89,17 @@
 		4222B8E16342F24DC2FA2AE0 /* Pods-TestYYKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYYKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.release.xcconfig"; sourceTree = "<group>"; };
 		A941E3658C440D753DB647AB /* Pods-TestYYKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYYKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestYYKit/Pods-TestYYKit.debug.xcconfig"; sourceTree = "<group>"; };
 		CD00E2101D485668004A1020 /* AlamoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoTableViewController.swift; sourceTree = "<group>"; };
+		CD11FC511D77CEB100399F2D /* Encryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
+		CD11FC531D77D07700399F2D /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CD11FC561D77D9EA00399F2D /* NSString+AES128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES128.h"; sourceTree = "<group>"; };
+		CD11FC571D77D9EA00399F2D /* NSString+AES128.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES128.m"; sourceTree = "<group>"; };
+		CD11FC591D77D9EA00399F2D /* libXG-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libXG-SDK.a"; sourceTree = "<group>"; };
+		CD11FC5A1D77D9EA00399F2D /* ReleaseNotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
+		CD11FC5B1D77D9EA00399F2D /* XGPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGPush.h; sourceTree = "<group>"; };
+		CD11FC5C1D77D9EA00399F2D /* XGSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGSetting.h; sourceTree = "<group>"; };
+		CD11FC601D77FDDF00399F2D /* BaseReponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseReponseObject.swift; sourceTree = "<group>"; };
+		CD11FC621D77FE9D00399F2D /* Transforms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transforms.swift; sourceTree = "<group>"; };
+		CD11FC641D780DA000399F2D /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppError.swift; path = ../../AppError.swift; sourceTree = "<group>"; };
 		CD1D19AC1D74113B00D7BDA4 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		CD1D19AE1D74115000D7BDA4 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		CD1D19B01D74116700D7BDA4 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +110,7 @@
 		CD1F71C01D47028300AFD9A7 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CD1F71CA1D47124800AFD9A7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		CD46161D1D7676E500F39E18 /* RequetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequetManager.swift; sourceTree = "<group>"; };
 		CD57AB191D6C17F800FFCD94 /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
 		CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
 		CD591E4E1D701C9D006E53BD /* FisrstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisrstViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +146,9 @@
 		CD9EE3D01D5A3B1400928CBA /* NSObject+HZExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HZExtend.h"; sourceTree = "<group>"; };
 		CD9EE3D11D5A3B1400928CBA /* NSObject+HZExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HZExtend.m"; sourceTree = "<group>"; };
 		CD9EE3D31D5A3DC700928CBA /* THURLNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THURLNavigation.swift; sourceTree = "<group>"; };
+		CDAD7E901D7730B500CA7DA1 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CDAD7E921D7734B900CA7DA1 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
+		CDAD7E941D7734EE00CA7DA1 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CDB432B31D5862A300BB037E /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		CDB432B71D5865A500BB037E /* NetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetViewController.swift; sourceTree = "<group>"; };
 		CDBC20761D5CB8C200B321BC /* YYKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TestYYKit-dyikdfgwbpejdoapbiefthzmcjyc/Build/Products/Debug-iphonesimulator/YYKit/YYKit.framework"; sourceTree = "<group>"; };
@@ -140,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD11FC5E1D77D9EA00399F2D /* libXG-SDK.a in Frameworks */,
 				CDBC20791D5CB8C900B321BC /* YYText.framework in Frameworks */,
 				B22943B845CA6DA09C660B58 /* Pods_TestYYKit.framework in Frameworks */,
 				CD57AB1C1D6C2EFD00FFCD94 /* LTMorphingLabel.framework in Frameworks */,
@@ -204,6 +232,27 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CD11FC551D77D9EA00399F2D /* AES128Util */ = {
+			isa = PBXGroup;
+			children = (
+				CD11FC561D77D9EA00399F2D /* NSString+AES128.h */,
+				CD11FC571D77D9EA00399F2D /* NSString+AES128.m */,
+				CD11FC581D77D9EA00399F2D /* XinGePush */,
+			);
+			path = AES128Util;
+			sourceTree = "<group>";
+		};
+		CD11FC581D77D9EA00399F2D /* XinGePush */ = {
+			isa = PBXGroup;
+			children = (
+				CD11FC591D77D9EA00399F2D /* libXG-SDK.a */,
+				CD11FC5A1D77D9EA00399F2D /* ReleaseNotes.txt */,
+				CD11FC5B1D77D9EA00399F2D /* XGPush.h */,
+				CD11FC5C1D77D9EA00399F2D /* XGSetting.h */,
+			);
+			path = XinGePush;
 			sourceTree = "<group>";
 		};
 		CD1D19AB1D7410E800D7BDA4 /* 13.测试ElasticTransition */ = {
@@ -295,7 +344,17 @@
 		CD5ED6221D4886EC00587C7D /* 5.PromiseKit测试 */ = {
 			isa = PBXGroup;
 			children = (
+				CD11FC551D77D9EA00399F2D /* AES128Util */,
 				CD5ED6231D48870100587C7D /* ProTableViewController.swift */,
+				CD46161D1D7676E500F39E18 /* RequetManager.swift */,
+				CD11FC601D77FDDF00399F2D /* BaseReponseObject.swift */,
+				CD11FC621D77FE9D00399F2D /* Transforms.swift */,
+				CD11FC511D77CEB100399F2D /* Encryption.swift */,
+				CD11FC531D77D07700399F2D /* Extension.swift */,
+				CDAD7E901D7730B500CA7DA1 /* Router.swift */,
+				CDAD7E921D7734B900CA7DA1 /* NetWork.swift */,
+				CDAD7E941D7734EE00CA7DA1 /* Model.swift */,
+				CD11FC641D780DA000399F2D /* AppError.swift */,
 			);
 			path = "5.PromiseKit测试";
 			sourceTree = "<group>";
@@ -564,6 +623,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD11FC5F1D77D9EA00399F2D /* ReleaseNotes.txt in Resources */,
 				CD1F71BD1D46FE1C00AFD9A7 /* hideSections.js in Resources */,
 				CD9A5C681D65B3AB0049993E /* Main.storyboard in Resources */,
 				CD9A2B0D1D45E1C500BC5E43 /* LaunchScreen.storyboard in Resources */,
@@ -665,15 +725,22 @@
 				CD9EE3CC1D5A30BC00928CBA /* ResponderTableViewController.swift in Sources */,
 				CD57AB1A1D6C17F800FFCD94 /* ADViewController.swift in Sources */,
 				CD97107F1D64BC1200A1BF2B /* AppConfig.swift in Sources */,
+				CDAD7E911D7730B500CA7DA1 /* Router.swift in Sources */,
+				CD46161E1D7676E500F39E18 /* RequetManager.swift in Sources */,
 				CDF106AE1D585BB900D35763 /* TheResourceStruct.swift in Sources */,
+				CD11FC541D77D07700399F2D /* Extension.swift in Sources */,
 				CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */,
 				CDDD22571D65BB32000BFCC2 /* SocketClientViewController.swift in Sources */,
 				CD1D19B31D741F4300D7BDA4 /* MenuViewController.swift in Sources */,
+				CD11FC521D77CEB100399F2D /* Encryption.swift in Sources */,
 				CDF6DEAD1D6BE9710090A02C /* LTMorphingLabelViewController.swift in Sources */,
 				CD591E531D701FE4006E53BD /* RevealAnimator.swift in Sources */,
 				CDCCF3AA1D58D2A7005C7DED /* ChatViewController.swift in Sources */,
+				CDAD7E951D7734EE00CA7DA1 /* Model.swift in Sources */,
 				CD1D19AF1D74115000D7BDA4 /* AboutViewController.swift in Sources */,
 				CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */,
+				CD11FC631D77FE9D00399F2D /* Transforms.swift in Sources */,
+				CD11FC611D77FDDF00399F2D /* BaseReponseObject.swift in Sources */,
 				CD9A2B051D45E1C500BC5E43 /* ViewController.swift in Sources */,
 				CD1D19B51D74263B00D7BDA4 /* ModalViewController.swift in Sources */,
 				CD9EE3D41D5A3DC700928CBA /* THURLNavigation.swift in Sources */,
@@ -681,14 +748,17 @@
 				CD00E2111D485668004A1020 /* AlamoTableViewController.swift in Sources */,
 				CDDD22551D65BB1D000BFCC2 /* SocketSeverViewController.swift in Sources */,
 				CD665A311D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift in Sources */,
+				CD11FC5D1D77D9EA00399F2D /* NSString+AES128.m in Sources */,
 				CD9EE3D21D5A3B1400928CBA /* NSObject+HZExtend.m in Sources */,
 				CDB432B41D5862A300BB037E /* Network.swift in Sources */,
 				CDB432B81D5865A500BB037E /* NetViewController.swift in Sources */,
 				CD1F71CD1D47134400AFD9A7 /* ImageTableViewCell.swift in Sources */,
 				CD9A2B031D45E1C500BC5E43 /* AppDelegate.swift in Sources */,
 				CD8A35991D756F8B0026A302 /* RACCommandViewController.swift in Sources */,
+				CD11FC651D780DA000399F2D /* AppError.swift in Sources */,
 				CD1D19B11D74116700D7BDA4 /* OptionViewController.swift in Sources */,
 				CD1F71CB1D47124800AFD9A7 /* TableViewController.swift in Sources */,
+				CDAD7E931D7734B900CA7DA1 /* NetWork.swift in Sources */,
 				CD9EE3CF1D5A3A7400928CBA /* HZURLNavigation.m in Sources */,
 				CD8A359D1D7577C50026A302 /* RACTestViewController.swift in Sources */,
 				CD8A359B1D7574F30026A302 /* RACMultiConectionViewController.swift in Sources */,
@@ -814,6 +884,10 @@
 				);
 				INFOPLIST_FILE = TestYYKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestYYKit/5.PromiseKit测试/AES128Util/XinGePush",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = Zoowee.TestYYKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -956,6 +1030,10 @@
 				);
 				INFOPLIST_FILE = TestYYKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestYYKit/5.PromiseKit测试/AES128Util/XinGePush",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = Zoowee.TestYYKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -990,6 +1068,10 @@
 				);
 				INFOPLIST_FILE = TestYYKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestYYKit/5.PromiseKit测试/AES128Util/XinGePush",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = Zoowee.TestYYKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

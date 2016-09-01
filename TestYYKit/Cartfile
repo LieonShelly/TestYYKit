@@ -1,3 +1,15 @@
 github "lexrus/LTMorphingLabel"
 github "onevcat/Kingfisher" ~> 2.4
 github "ReactiveCocoa/ReactiveCocoa"
+github "nixzhu/Proposer" >= 0.9.0
+github "Hearst-DD/ObjectMapper" ~> 1.3
+github "kishikawakatsumi/KeychainAccess"
+github "Alamofire/Alamofire" ~> 3.4
+github "starboychina/WechatKit"
+github "malcommac/SwiftDate"
+github "devxoul/URLNavigator" ~> 0.6
+github "SnapKit/SnapKit" >= 0.15.0
+github "hyperoslo/ImagePicker"
+github "TakeScoop/SwiftyRSA"
+github "Ekhoo/Device"
+github "Alamofire/AlamofireImage" ~> 2.0
