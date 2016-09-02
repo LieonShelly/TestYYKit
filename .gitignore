@@ -26,6 +26,7 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
+.swiftlint.yml
 
 ## Playgrounds
 timeline.xctimeline

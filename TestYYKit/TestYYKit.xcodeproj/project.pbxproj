@@ -29,17 +29,15 @@
 		CD1F71CD1D47134400AFD9A7 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */; };
 		CD46161E1D7676E500F39E18 /* RequetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46161D1D7676E500F39E18 /* RequetManager.swift */; };
 		CD57AB1A1D6C17F800FFCD94 /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD57AB191D6C17F800FFCD94 /* ADViewController.swift */; };
-		CD57AB1C1D6C2EFD00FFCD94 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */; };
-		CD57AB1D1D6C2F4700FFCD94 /* LTMorphingLabel.framework in Sources */ = {isa = PBXBuildFile; fileRef = CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */; };
 		CD591E4F1D701C9D006E53BD /* FisrstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD591E4E1D701C9D006E53BD /* FisrstViewController.swift */; };
 		CD591E511D701CAD006E53BD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD591E501D701CAD006E53BD /* SecondViewController.swift */; };
 		CD591E531D701FE4006E53BD /* RevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD591E521D701FE4006E53BD /* RevealAnimator.swift */; };
+		CD59D3F31D792EAA001784FA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CD59D3F21D792EAA001784FA /* .swiftlint.yml */; };
 		CD5ED6241D48870100587C7D /* ProTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5ED6231D48870100587C7D /* ProTableViewController.swift */; };
 		CD665A311D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD665A301D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift */; };
 		CD8A35911D753C080026A302 /* RACViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A35901D753C080026A302 /* RACViewController.swift */; };
 		CD8A35931D7560590026A302 /* RACSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A35921D7560590026A302 /* RACSubjectViewController.swift */; };
 		CD8A35951D7562160026A302 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A35941D7562160026A302 /* TwoViewController.swift */; };
-		CD8A35971D7566170026A302 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8A35961D7566170026A302 /* Result.framework */; };
 		CD8A35991D756F8B0026A302 /* RACCommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A35981D756F8B0026A302 /* RACCommandViewController.swift */; };
 		CD8A359B1D7574F30026A302 /* RACMultiConectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A359A1D7574F30026A302 /* RACMultiConectionViewController.swift */; };
 		CD8A359D1D7577C50026A302 /* RACTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A359C1D7577C50026A302 /* RACTestViewController.swift */; };
@@ -51,8 +49,6 @@
 		CD9A2B181D45E1C500BC5E43 /* TestYYKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B171D45E1C500BC5E43 /* TestYYKitTests.swift */; };
 		CD9A2B231D45E1C500BC5E43 /* TestYYKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B221D45E1C500BC5E43 /* TestYYKitUITests.swift */; };
 		CD9A5C681D65B3AB0049993E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A5C671D65B3AB0049993E /* Main.storyboard */; };
-		CD9EE3CC1D5A30BC00928CBA /* ResponderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3CA1D5A2E2000928CBA /* ResponderTableViewController.swift */; };
-		CD9EE3CF1D5A3A7400928CBA /* HZURLNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3CE1D5A3A7400928CBA /* HZURLNavigation.m */; };
 		CD9EE3D21D5A3B1400928CBA /* NSObject+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3D11D5A3B1400928CBA /* NSObject+HZExtend.m */; };
 		CD9EE3D41D5A3DC700928CBA /* THURLNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3D31D5A3DC700928CBA /* THURLNavigation.swift */; };
 		CDAD7E911D7730B500CA7DA1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAD7E901D7730B500CA7DA1 /* Router.swift */; };
@@ -112,16 +108,15 @@
 		CD1F71CC1D47134400AFD9A7 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		CD46161D1D7676E500F39E18 /* RequetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequetManager.swift; sourceTree = "<group>"; };
 		CD57AB191D6C17F800FFCD94 /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
-		CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
 		CD591E4E1D701C9D006E53BD /* FisrstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisrstViewController.swift; sourceTree = "<group>"; };
 		CD591E501D701CAD006E53BD /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CD591E521D701FE4006E53BD /* RevealAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealAnimator.swift; sourceTree = "<group>"; };
+		CD59D3F21D792EAA001784FA /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
 		CD5ED6231D48870100587C7D /* ProTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProTableViewController.swift; sourceTree = "<group>"; };
 		CD665A301D6CA21D00BB67DE /* SKPhotoBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserViewController.swift; sourceTree = "<group>"; };
 		CD8A35901D753C080026A302 /* RACViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACViewController.swift; sourceTree = "<group>"; };
 		CD8A35921D7560590026A302 /* RACSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACSubjectViewController.swift; sourceTree = "<group>"; };
 		CD8A35941D7562160026A302 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
-		CD8A35961D7566170026A302 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		CD8A35981D756F8B0026A302 /* RACCommandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACCommandViewController.swift; sourceTree = "<group>"; };
 		CD8A359A1D7574F30026A302 /* RACMultiConectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACMultiConectionViewController.swift; sourceTree = "<group>"; };
 		CD8A359C1D7577C50026A302 /* RACTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACTestViewController.swift; sourceTree = "<group>"; };
@@ -140,9 +135,6 @@
 		CD9A2B241D45E1C500BC5E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD9A2B321D45E2DC00BC5E43 /* TestYYKit_Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TestYYKit_Bridge_Header.h; path = TestYYKit/TestYYKit_Bridge_Header.h; sourceTree = "<group>"; };
 		CD9A5C671D65B3AB0049993E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CD9EE3CA1D5A2E2000928CBA /* ResponderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponderTableViewController.swift; sourceTree = "<group>"; };
-		CD9EE3CD1D5A3A7400928CBA /* HZURLNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZURLNavigation.h; sourceTree = "<group>"; };
-		CD9EE3CE1D5A3A7400928CBA /* HZURLNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZURLNavigation.m; sourceTree = "<group>"; };
 		CD9EE3D01D5A3B1400928CBA /* NSObject+HZExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HZExtend.h"; sourceTree = "<group>"; };
 		CD9EE3D11D5A3B1400928CBA /* NSObject+HZExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HZExtend.m"; sourceTree = "<group>"; };
 		CD9EE3D31D5A3DC700928CBA /* THURLNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THURLNavigation.swift; sourceTree = "<group>"; };
@@ -170,8 +162,6 @@
 				CD11FC5E1D77D9EA00399F2D /* libXG-SDK.a in Frameworks */,
 				CDBC20791D5CB8C900B321BC /* YYText.framework in Frameworks */,
 				B22943B845CA6DA09C660B58 /* Pods_TestYYKit.framework in Frameworks */,
-				CD57AB1C1D6C2EFD00FFCD94 /* LTMorphingLabel.framework in Frameworks */,
-				CD8A35971D7566170026A302 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,8 +373,6 @@
 		CD9A2AF61D45E1C500BC5E43 = {
 			isa = PBXGroup;
 			children = (
-				CD8A35961D7566170026A302 /* Result.framework */,
-				CD57AB1B1D6C2EFD00FFCD94 /* LTMorphingLabel.framework */,
 				CD97107E1D64BC1200A1BF2B /* AppConfig.swift */,
 				CD9A2B021D45E1C500BC5E43 /* AppDelegate.swift */,
 				CD9A2B321D45E2DC00BC5E43 /* TestYYKit_Bridge_Header.h */,
@@ -431,6 +419,7 @@
 				CD9A2B0E1D45E1C500BC5E43 /* Info.plist */,
 				CD1F71BE1D4700FC00AFD9A7 /* getPost.js */,
 				CD1F71BC1D46FE1C00AFD9A7 /* hideSections.js */,
+				CD59D3F21D792EAA001784FA /* .swiftlint.yml */,
 			);
 			path = TestYYKit;
 			sourceTree = "<group>";
@@ -459,9 +448,6 @@
 				CD9EE3D31D5A3DC700928CBA /* THURLNavigation.swift */,
 				CD9EE3D01D5A3B1400928CBA /* NSObject+HZExtend.h */,
 				CD9EE3D11D5A3B1400928CBA /* NSObject+HZExtend.m */,
-				CD9EE3CD1D5A3A7400928CBA /* HZURLNavigation.h */,
-				CD9EE3CE1D5A3A7400928CBA /* HZURLNavigation.m */,
-				CD9EE3CA1D5A2E2000928CBA /* ResponderTableViewController.swift */,
 			);
 			name = "8.测试响应链";
 			path = "6. Swift Talk -- NetWorking测试/7.JSQMessagesViewController测试/8.测试响应链";
@@ -529,6 +515,7 @@
 				3D145ACEC0C7ADA7F03B57E1 /* [CP] Embed Pods Frameworks */,
 				591B3C6701FA77F1679D63AD /* [CP] Copy Pods Resources */,
 				CDF6DEAA1D6BE8320090A02C /* Carthage */,
+				CDBAC4CB1D79205D00927037 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -626,6 +613,7 @@
 				CD11FC5F1D77D9EA00399F2D /* ReleaseNotes.txt in Resources */,
 				CD1F71BD1D46FE1C00AFD9A7 /* hideSections.js in Resources */,
 				CD9A5C681D65B3AB0049993E /* Main.storyboard in Resources */,
+				CD59D3F31D792EAA001784FA /* .swiftlint.yml in Resources */,
 				CD9A2B0D1D45E1C500BC5E43 /* LaunchScreen.storyboard in Resources */,
 				CD1F71BF1D4700FC00AFD9A7 /* getPost.js in Resources */,
 				CD9A2B0A1D45E1C500BC5E43 /* Assets.xcassets in Resources */,
@@ -694,6 +682,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		CDBAC4CB1D79205D00927037 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		CDF6DEAA1D6BE8320090A02C /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -721,8 +723,6 @@
 			files = (
 				CD591E511D701CAD006E53BD /* SecondViewController.swift in Sources */,
 				CD1D19AD1D74113B00D7BDA4 /* InitialViewController.swift in Sources */,
-				CD57AB1D1D6C2F4700FFCD94 /* LTMorphingLabel.framework in Sources */,
-				CD9EE3CC1D5A30BC00928CBA /* ResponderTableViewController.swift in Sources */,
 				CD57AB1A1D6C17F800FFCD94 /* ADViewController.swift in Sources */,
 				CD97107F1D64BC1200A1BF2B /* AppConfig.swift in Sources */,
 				CDAD7E911D7730B500CA7DA1 /* Router.swift in Sources */,
@@ -759,7 +759,6 @@
 				CD1D19B11D74116700D7BDA4 /* OptionViewController.swift in Sources */,
 				CD1F71CB1D47124800AFD9A7 /* TableViewController.swift in Sources */,
 				CDAD7E931D7734B900CA7DA1 /* NetWork.swift in Sources */,
-				CD9EE3CF1D5A3A7400928CBA /* HZURLNavigation.m in Sources */,
 				CD8A359D1D7577C50026A302 /* RACTestViewController.swift in Sources */,
 				CD8A359B1D7574F30026A302 /* RACMultiConectionViewController.swift in Sources */,
 				CD8A35931D7560590026A302 /* RACSubjectViewController.swift in Sources */,

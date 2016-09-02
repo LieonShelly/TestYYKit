@@ -6,6 +6,9 @@
 //  Copyright © 2016年 lieon. All rights reserved.
 //
 
+// swiftlint:disable trailing_newline
+// swiftlint:disable trailing_whitespace
+
 import UIKit
 
 extension String {

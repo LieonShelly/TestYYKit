@@ -5,6 +5,8 @@
 //  Created by lieon on 16/8/29.
 //  Copyright © 2016年 lieon. All rights reserved.
 //
+// swiftlint:disable colon
+// swiftlint:disable trailing_whitespace
 
 import UIKit
 import ElasticTransition

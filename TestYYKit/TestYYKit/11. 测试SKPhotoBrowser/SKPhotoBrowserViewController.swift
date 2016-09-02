@@ -5,6 +5,7 @@
 //  Created by lieon on 16/8/23.
 //  Copyright © 2016年 lieon. All rights reserved.
 //
+// swiftlint:disable trailing_whitespace
 
 import UIKit
 import SKPhotoBrowser
@@ -72,7 +73,10 @@ extension SKPhotoBrowserViewController: UICollectionViewDataSource, UICollection
      }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! ImageCell
+        
+        guard let cell = collectionView.cellForItemAtIndexPath(indexPath) as? ImageCell else {
+            return 
+        }
         let originImage = cell.imageView.image
         if let originImage = originImage {
             let browser = SKPhotoBrowser(originImage: originImage, photos: images, animatedFromView: cell)

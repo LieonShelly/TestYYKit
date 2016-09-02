@@ -5,6 +5,7 @@
 //  Created by lieon on 16/8/30.
 //  Copyright © 2016年 lieon. All rights reserved.
 //
+// swiftlint:disable trailing_whitespace
 
 import UIKit
 import ReactiveCocoa
@@ -56,7 +57,7 @@ class RACViewController: UIViewController {
          订阅信号 
          只要订阅信号，就会返回一个取消订阅信号的类
          */
-        let disposable = signal.subscribeNext { (x) in
+        _ = signal.subscribeNext { (x) in
            // block :只要信号内部发送数据，就会调用这个block
             print(x)
         }

@@ -5,6 +5,7 @@
 //  Created by lieon on 16/8/26.
 //  Copyright © 2016年 lieon. All rights reserved.
 //
+// swiftlint:disable trailing_whitespace
 
 import UIKit
 import SnapKit

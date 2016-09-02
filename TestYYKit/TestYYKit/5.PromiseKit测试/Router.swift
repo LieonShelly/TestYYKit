@@ -5,10 +5,19 @@
 //  Created by lieon on 16/8/31.
 //  Copyright © 2016年 lieon. All rights reserved.
 //
-
-
+// swiftlint:disable trailing_whitespace
+// swiftlint:disable force_cast
+// swiftlint:disable colon
+// swiftlint:disable control_statement
+// swiftlint:disable valid_docs
+// swiftlint:disable opening_brace
+// swiftlint:disable trailing_newline
+// swiftlint:disable trailing_semicolon
 // swiftlint:disable variable_name
-// swiftlint:disable force_unwrapping
+// swiftlint:disable legacy_constant
+// swiftlint:disable legacy_constructor
+// swiftlint:disable comma
+
 
 import Foundation
 import Alamofire

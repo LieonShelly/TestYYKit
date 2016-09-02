@@ -5,6 +5,20 @@
 //  Created by wanglj on 16/7/7.
 //  Copyright © 2016年 TH. All rights reserved.
 //
+// swiftlint:disable force_cast
+// swiftlint:disable colon
+// swiftlint:disable control_statement
+// swiftlint:disable valid_docs
+// swiftlint:disable opening_brace
+// swiftlint:disable trailing_newline
+// swiftlint:disable trailing_semicolon
+// swiftlint:disable variable_name
+// swiftlint:disable legacy_constant
+// swiftlint:disable legacy_constructor
+// swiftlint:disable comma
+// swiftlint:disable return_arrow_whitespace
+// swiftlint:disable statement_position
+// swiftlint:disable trailing_whitespace
 
 import UIKit
 

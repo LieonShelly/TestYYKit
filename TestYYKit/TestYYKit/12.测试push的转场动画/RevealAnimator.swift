@@ -7,6 +7,7 @@
 //
 
 ///  转场动画的Demo在lieon的github上得DemoCode fork库上
+// swiftlint:disable trailing_whitespace
 
 import UIKit
 
@@ -63,7 +64,7 @@ class RevealAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         if let context = storedContext {
             
             context.completeTransition(!context.transitionWasCancelled())
-            let fromVc = context.viewControllerForKey(UITransitionContextFromViewControllerKey) as! FisrstViewController
+            guard let fromVc = context.viewControllerForKey(UITransitionContextFromViewControllerKey) as?FisrstViewController else { return }
             fromVc.logo.removeAllAnimations()
         }
         

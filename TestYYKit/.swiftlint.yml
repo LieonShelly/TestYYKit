@@ -1,0 +1,14 @@
+disabled_rules:
+- line_length
+- file_length
+- todo
+- function_body_length
+- nesting
+- valid_docs
+
+included:
+ - TestYYKit
+
+excluded: 
+ - Carthage
+ - Pods

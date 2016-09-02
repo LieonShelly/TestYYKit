@@ -9,6 +9,14 @@
 import UIKit
 import ElasticTransition
 
+// swiftlint:disable force_cast
+// swiftlint:disable colon
+// swiftlint:disable control_statement
+// swiftlint:disable valid_docs
+// swiftlint:disable opening_brace
+// swiftlint:disable trailing_newline
+// swiftlint:disable trailing_whitespace
+
 class AboutViewController: UIViewController, ElasticMenuTransitionDelegate{
 
     var dismissByForegroundDrag: Bool = true

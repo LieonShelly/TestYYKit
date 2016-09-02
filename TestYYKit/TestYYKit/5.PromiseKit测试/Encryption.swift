@@ -5,6 +5,8 @@
 //  Created by lieon on 16/9/1.
 //  Copyright © 2016年 lieon. All rights reserved.
 //
+// swiftlint:disable trailing_whitespace
+// swiftlint:disable trailing_newline
 
 import Foundation
 import ObjectMapper
