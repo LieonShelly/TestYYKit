@@ -53,3 +53,24 @@ class Header: Model {
         appRole <- map["APP_ROLE"]
     }
 }
+
+class FileUploadParameter: Model {
+    var dir: FileUploadDir?
+    
+    override func mapping(map: Map) {
+        dir <- map["prefix[image]"]
+    }
+}
+
+/// 文件上传目录
+public enum FileUploadDir: String {
+    /// 用户头像
+    case UserAvatar = "user/avatar"
+    /// 联系管家发送图片
+    case ButlerChat = "user/banker_chats"
+    /// 用户反馈
+    case Feedback = "user/feedback"
+    /// 订单退款
+    case OrderRefund = "user_order/refund"
+}
+

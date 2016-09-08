@@ -232,5 +232,30 @@ class Goods: Model {
     }
 }
 
+/// 上传文件
+class FileUploadResponse: BaseReponseObjec<FileListObject> {}
 
+class FileListObject: Model {
+    var successList: [FileObject]? = []
+    
+    override func mapping(map: Map) {
+        successList <- map["success"]
+    }
+}
+
+class FileObject: Model {
+    var path: String?
+    var url: NSURL?
+    var name: String?
+    var size: UInt64?
+    var type: String?
+    
+    override func mapping(map: Map) {
+        path <- map["file_name"]
+        url <- (map["url"], URLTransform())
+        name <- map["name"]
+        size <- map["size"]
+        type <- map["image/jpeg"]
+    }
+}
 

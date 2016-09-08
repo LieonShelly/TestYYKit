@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cAU-Ee-GdC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kDv-Fm-OAp">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -277,7 +277,7 @@
         <!--Initial View Controller-->
         <scene sceneID="hAj-L8-ks7">
             <objects>
-                <viewController id="kDv-Fm-OAp" customClass="InitialViewController" customModule="TestYYKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="initial" id="kDv-Fm-OAp" customClass="InitialViewController" customModule="TestYYKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Zw-6J-WPQ"/>
                         <viewControllerLayoutGuide type="bottom" id="uek-kQ-6Nd"/>
@@ -487,7 +487,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="YYs-zz-3Mw">
             <objects>
-                <tabBarController storyboardIdentifier="initial" id="cAU-Ee-GdC" sceneMemberID="viewController">
+                <tabBarController id="cAU-Ee-GdC" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="n0P-30-bh9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

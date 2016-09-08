@@ -23,6 +23,9 @@ import UIKit
 import Alamofire
 import PromiseKit
 import ObjectMapper
+import Kingfisher
+import AlamofireImage
+
 /**
   请求数据
  
@@ -63,3 +66,66 @@ func handRequest<T: Mappable>(router: Router) -> Promise<T> {
         
     })
 }
+
+func handDownloadPhoto(router: NSURL?) -> Promise<Image?> {
+    return Promise(resolvers: { (fulfill, reject) in
+       if let URL = router where !URL.absoluteString.isEmpty {
+        _ = request(.GET, URL).validate().responseImage(completionHandler: { (response:Response<Image, NSError>) in
+            switch response.result {
+            case .Success(let value):
+                fulfill(value)
+            case .Failure(_):
+                fulfill(nil)
+            }
+            })
+       } else {
+        fulfill(nil)
+        }
+    })
+}
+
+func handleUpload(router: URLRequestConvertible, param: FileUploadParameter, fileData: [NSData]) -> Promise<FileUploadResponse> {
+    return Promise { fulfill, reject in
+        let _ = upload(router, multipartFormData: { multipartFormData in
+            fileData.forEach { (data) in
+                multipartFormData.appendBodyPart(data: data, name: "image[]", fileName: "image.jpg", mimeType: "image/jpeg")
+            }
+            
+            guard let dic = param.toJSON() as? [String: String] else {
+                return
+            }
+            for (key, value) in dic {
+                multipartFormData.appendBodyPart(data: value.dataUsingEncoding(NSUTF8StringEncoding)!, name: key)
+            }
+            }, encodingCompletion: { result in
+                switch result {
+                case .Success(let upload, _, _):
+                    upload
+                        .validate()
+                        .responseJSON(completionHandler: { (response: Response<AnyObject, NSError>) in
+                            switch response.result {
+                            case .Success(let value):
+                                if let base = Mapper<FileUploadResponse>().map(value) {
+                                    if base.isValid {
+                                        fulfill(base)
+                                    } else {
+                                        let error = AppError(code: base.code, msg: base.msg)
+                                        if base.needRelogin {
+//                                            if let delegate = UIApplication.sharedApplication().delegate as? AppDelegate, containerVC = delegate.containerVC {
+//                                                containerVC.needLogin()
+//                                            }
+                                        }
+                                        reject(error)
+                                    }
+                                }
+                            case .Failure(let error):
+                                reject(error)
+                            }
+                        })
+                case .Failure(let error):
+                    reject(error)
+                }
+        })
+    }
+}
+

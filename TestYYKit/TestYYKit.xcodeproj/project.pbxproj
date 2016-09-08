@@ -49,6 +49,7 @@
 		CD9A2B181D45E1C500BC5E43 /* TestYYKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B171D45E1C500BC5E43 /* TestYYKitTests.swift */; };
 		CD9A2B231D45E1C500BC5E43 /* TestYYKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A2B221D45E1C500BC5E43 /* TestYYKitUITests.swift */; };
 		CD9A5C681D65B3AB0049993E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A5C671D65B3AB0049993E /* Main.storyboard */; };
+		CD9AF3F41D813D4800A52555 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AF3F31D813D4800A52555 /* AlertViewController.swift */; };
 		CD9EE3D21D5A3B1400928CBA /* NSObject+HZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3D11D5A3B1400928CBA /* NSObject+HZExtend.m */; };
 		CD9EE3D41D5A3DC700928CBA /* THURLNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EE3D31D5A3DC700928CBA /* THURLNavigation.swift */; };
 		CDAD7E911D7730B500CA7DA1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAD7E901D7730B500CA7DA1 /* Router.swift */; };
@@ -135,6 +136,7 @@
 		CD9A2B241D45E1C500BC5E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD9A2B321D45E2DC00BC5E43 /* TestYYKit_Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TestYYKit_Bridge_Header.h; path = TestYYKit/TestYYKit_Bridge_Header.h; sourceTree = "<group>"; };
 		CD9A5C671D65B3AB0049993E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CD9AF3F31D813D4800A52555 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		CD9EE3D01D5A3B1400928CBA /* NSObject+HZExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HZExtend.h"; sourceTree = "<group>"; };
 		CD9EE3D11D5A3B1400928CBA /* NSObject+HZExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HZExtend.m"; sourceTree = "<group>"; };
 		CD9EE3D31D5A3DC700928CBA /* THURLNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THURLNavigation.swift; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 				CD8A35981D756F8B0026A302 /* RACCommandViewController.swift */,
 				CD8A359A1D7574F30026A302 /* RACMultiConectionViewController.swift */,
 				CD8A359C1D7577C50026A302 /* RACTestViewController.swift */,
+				CD9AF3F31D813D4800A52555 /* AlertViewController.swift */,
 			);
 			path = "14.测试RAC";
 			sourceTree = "<group>";
@@ -706,6 +709,18 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Proposer.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/WechatKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/URLNavigator.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ImagePicker.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyRSA.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Device.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -728,6 +743,7 @@
 				CDAD7E911D7730B500CA7DA1 /* Router.swift in Sources */,
 				CD46161E1D7676E500F39E18 /* RequetManager.swift in Sources */,
 				CDF106AE1D585BB900D35763 /* TheResourceStruct.swift in Sources */,
+				CD9AF3F41D813D4800A52555 /* AlertViewController.swift in Sources */,
 				CD11FC541D77D07700399F2D /* Extension.swift in Sources */,
 				CD1F71C11D47028300AFD9A7 /* Post.swift in Sources */,
 				CDDD22571D65BB32000BFCC2 /* SocketClientViewController.swift in Sources */,
@@ -1009,22 +1025,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/FMDB\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/OMGHTTPURLRQ\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/ObjectMapper\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/PromiseKit\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/Reusable\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/SnapKit\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/TYAlertController\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/YYText\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TestYYKit/Info.plist;
@@ -1047,22 +1047,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/FMDB\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/OMGHTTPURLRQ\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/ObjectMapper\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/PromiseKit\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/Reusable\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/SnapKit\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/TYAlertController\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/YYText\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TestYYKit/Info.plist;
