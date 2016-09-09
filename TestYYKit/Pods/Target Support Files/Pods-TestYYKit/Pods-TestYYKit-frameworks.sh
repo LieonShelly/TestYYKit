@@ -84,6 +84,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/500px-iOS-api/_500px_iOS_api.framework"
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CocoaAsyncSocket/CocoaAsyncSocket.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ElasticTransition/ElasticTransition.framework"
@@ -103,6 +104,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/YYText/YYText.framework"
 fi
 if [[ "$CONFIGURATION" == "ReleaseTest" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/500px-iOS-api/_500px_iOS_api.framework"
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CocoaAsyncSocket/CocoaAsyncSocket.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ElasticTransition/ElasticTransition.framework"
@@ -122,6 +124,7 @@ if [[ "$CONFIGURATION" == "ReleaseTest" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/YYText/YYText.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/500px-iOS-api/_500px_iOS_api.framework"
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CocoaAsyncSocket/CocoaAsyncSocket.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ElasticTransition/ElasticTransition.framework"

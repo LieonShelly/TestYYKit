@@ -1,46 +1,65 @@
-disabled_rules:
-- line_length
-- file_length
-- todo
-- function_body_length
-- nesting
-- valid_docs
-
-included:
- - TestYYKit
-
-excluded: 
- - Carthage
- - Pods
-
+disabled_rules: # rule identifiers to exclude from running
+    - line_length # Enforce maximum line length
+    #- leading_whitespace # This rule checks that there's no leading whitespace in your file.
+    - trailing_whitespace # This rule checks whether you don't have any trailing whitespace.
+    #- return_arrow_whitespace # This rule checks whether you have 1 space before return arrow and return type. Newlines are also acceptable.
+    #- trailing_newline # Files should have a single trailing newline.
+    #- operator_whitespace # Use a single whitespace around operators when defining them.
+    #- force_cast # This rule checks whether you don't do force casts.
+    - file_length # Enforce maximum file length
+    - todo # This rule checks whether you removed all TODOs and FIXMEs.
+    #- colon # This rule checks whether you associate the colon with the identifier.
+    #- type_name # Type name should only contain alphanumeric characters, start with an uppercase character and between 3 and 40 characters in length.
+    #- variable_name # Variable name should only contain alphanumeric characters, start with a a lowercase character and be between 3 and 40 characters in length.
+    #- type_body_length # Enforce maximum type body length
+    - function_body_length # Enforce maximum function length
+    - nesting # Types should be nested at most 1 level deep, and statements should be nested at most 5 levels deep.
+    #- control_statement # if,for,while,do statements shouldn't wrap their conditionals in parentheses.
+    #- opening_brace # Check whether there is a space before opening brace and it is on the same line.
+    #- comma # One space before and no after must be present next to any comma.
+    - valid_docs
+    #- statement_position # This rule checks whether statements are correctly positioned.
+    # Find all the available rules by running:
+    # swiftlint rules
+opt_in_rules:
+#    - empty_count
+#   - vertical_whitespace
+#  - force_unwrapping
+#   - private_outlet
+included: # paths to include during linting. `--path` is ignored if present.
+    - TestYYKit
+excluded: # paths to ignore during linting.
+    - Carthage
+    - Pods
 # configurable rules can be customized from this configuration file
 # binary rules can set their severity level
 force_cast: warning # implicitly
 force_try:
-  severity: warning # explicitly
+severity: warning # explicitly
 # rules that have both warning and error levels, can set just the warning level
 # implicitly
+vertical_whitespace: warning
 line_length: 110
 # they can set both implicitly with an array
 type_body_length:
-  - 300 # warning
-  - 400 # error
+    - 300 # warning
+    - 400 # error
 # or they can set both explicitly
 file_length:
-   warning: 500
-   error: 1200
+    warning: 500
+    error: 1200
 # naming rules can set warnings/errors for min_length and max_length
 # additionally they can set excluded names
 type_name:
-   min_length: 4 # only warning
-   max_length: # warning and error
-   warning: 40
-   error: 50
-   excluded: iPhone # excluded via string
+    min_length: 3 # only warning
+    max_length: # warning and error
+    warning: 40
+    error: 50
+    excluded: iPhone # excluded via string
 variable_name:
-   min_length: # only min_length
-   error: 4 # only error
-   excluded: # excluded via string array
-   - id
-   - URL
+    min_length: # only min_length
+    error: 3 # only error
+    excluded: # excluded via string array
+    - id
+    - URL
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit)

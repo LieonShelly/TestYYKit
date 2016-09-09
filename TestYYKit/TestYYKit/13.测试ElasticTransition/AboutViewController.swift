@@ -20,8 +20,6 @@ import ElasticTransition
 class AboutViewController: UIViewController, ElasticMenuTransitionDelegate{
 
     var dismissByForegroundDrag: Bool = true
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,8 +30,6 @@ class AboutViewController: UIViewController, ElasticMenuTransitionDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
     /*
     // MARK: - Navigation
 

@@ -24,12 +24,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    internal var apiHelper: PXAPIHelper?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        apiHelper = PXAPIHelper(host: nil, consumerKey: "DC2To2BS0ic1ChKDK15d44M42YHf9gbUJgdFoF0m", consumerSecret: "i8WL4chWoZ4kw9fh3jzHK7XzTer1y5tUNvsTFNnB")
         window = UIWindow()
         window?.frame = UIScreen.mainScreen().bounds
-        let navi = UINavigationController(rootViewController: AlertViewController())
+        let navi = UINavigationController(rootViewController: FRPGalleryViewController(collectionViewLayout: FRPGalleryFlowLayout()))
+        navi.view.backgroundColor = UIColor.whiteColor()
         window?.rootViewController = navi
         window?.makeKeyAndVisible()
         return true

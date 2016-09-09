@@ -84,5 +84,3 @@ class RWLogoLayer {
         return layer
     }
 }
-
-

@@ -1,4 +1,5 @@
 PODS:
+  - 500px-iOS-api (1.0.5)
   - AFNetworking (3.1.0):
     - AFNetworking/NSURLSession (= 3.1.0)
     - AFNetworking/Reachability (= 3.1.0)
@@ -61,6 +62,7 @@ PODS:
   - YYText (1.0.5)
 
 DEPENDENCIES:
+  - 500px-iOS-api
   - AFNetworking (~> 3.0)
   - CocoaAsyncSocket
   - ElasticTransition (~> 3.0.0)
@@ -77,6 +79,7 @@ DEPENDENCIES:
   - YYText
 
 SPEC CHECKSUMS:
+  500px-iOS-api: d9e46cb6300cef1a12964641374aa467d3cfb891
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
   ElasticTransition: 231e60fa66f68f42129e7969736f4a9e69794f97
@@ -95,6 +98,6 @@ SPEC CHECKSUMS:
   TYAlertController: dfc58e9950d30f255f13c7e578496ec0cc9f0ef5
   YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
 
-PODFILE CHECKSUM: 215c60ddd15049f170cdf4ba66b8129c12882dbf
+PODFILE CHECKSUM: 2aeb3e8e08d49e075dd8342bf24e6f3af0537a25
 
 COCOAPODS: 1.0.1

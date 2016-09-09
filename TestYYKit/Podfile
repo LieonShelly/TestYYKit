@@ -18,7 +18,7 @@ pod 'YYText'
 pod 'CocoaAsyncSocket'
 pod 'SKPhotoBrowser'
 pod "ElasticTransition", "~> 3.0.0"
-
+pod '500px-iOS-api'
 end
 target 'TestYYKit' do
 pods
